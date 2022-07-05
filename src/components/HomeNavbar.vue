@@ -1,14 +1,39 @@
 <template>
-  <nav>
-    <label for="switch"><font-awesome-icon icon="fa-solid fa-bars" /></label>
-    <input type="checkbox" id="switch" />
-    <ul class="menu">
-      <li><a href="##">Home</a></li>
-      <li><a href="##">About</a></li>
-      <li><a href="##">Graphy</a></li>
-      <li><a href="##">Intro</a></li>
-      <li><router-link to="/map">Map</router-link></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid nav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">會員</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">領養</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">貓的兩三事</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">我的最愛</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">即時團購</a>
+          </li>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">問題回報</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">贊助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">設定</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -17,106 +42,20 @@ export default {};
 </script>
 
 <style scoped>
-body,
-h1,
-ul,
-li {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* NavBar */
-nav {
-  background: rgb(246, 146, 70);
+.nav{
+  background: rgb(246,146,70);
   box-shadow: 0px 1px 3px #00000088;
+  padding: 4px;
+  
 }
-nav::after {
-  content: "";
-  display: block;
-  clear: both;
+nav{
+  padding: 0;
 }
-nav h1 {
-  float: left;
-  padding-left: 50px;
-  line-height: 50px;
-}
-
-/* 隱藏 checkbox */
-input {
-  display: none;
-}
-
-/* 漢堡按鈕 */
-label {
-  float: left;
-  padding-right: 50px;
-  line-height: 50px;
-  cursor: pointer;
-}
-label img {
-  width: 30px;
-  vertical-align: middle;
-}
-
-/* 下拉選單效果 */
-.menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.2s; /* 動畫秒數 */
-}
-
-input:checked ~ .menu {
-  max-height: 300px;
-}
-
-/* mediaquery */
-@media screen and (min-width: 768px) {
-  label {
-    display: none;
-  }
-  .menu {
-    float: right;
-    clear: none;
-    max-height: 50px;
-    background: rgb(246, 146, 70);
-  }
-}
-.menu li {
-  display: inline-block;
-}
-li a {
-  padding: 0 15px;
-}
-/* menu*/
-.menu {
-  clear: both;
-  background: rgb(246, 146, 70);
-}
-
-.menu li {
+.navbar-nav li{
   text-align: center;
-  border-bottom: 1px solid rgb(246, 146, 70);
 }
-.menu a {
-  display: block;
-  line-height: 50px;
-  font-size: 18px;
-  color: rgb(255, 232, 204);
-}
-.menu a:hover {
-  background: rgb(255, 232, 204);
-  color: rgb(246, 146, 70);
+.navbar-nav li:hover{
+  background: rgba(255, 232, 204, 0.848);
+  color: rgba(246, 146, 70, 0.664);
 }
 </style>
