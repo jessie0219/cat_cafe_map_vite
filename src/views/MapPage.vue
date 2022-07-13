@@ -1,6 +1,6 @@
 <template>
   <Navbar></Navbar>
-  <div class="container">
+  <div class="container buttonGroup">
     <div class="row">
       <div class="mt-4 mb-1"><strong>點選篩選</strong></div>
       <div>
@@ -17,7 +17,7 @@
       </div>
       <div class="mt-4">
         <a type="submit" @click="tabChange(SelectLine)">
-          <button class="lineBtn mx-1">選擇捷運路線</button></a
+          <button class="lineBtn mx-1">選擇捷運</button></a
         >
       </div>
       <div class="mt-4">
@@ -39,7 +39,9 @@
       </div>
     </div>
   </div>
-  <div v-is="changeView"></div>
+  <div class="text-center">
+    <div v-is="changeView"></div>
+  </div>
 </template>
 
 <script>
@@ -84,6 +86,9 @@ export default {
 </script>
 
 <style scoped>
+.buttonGroup {
+  /* margin-left: 30%; */
+}
 button.locationBtn {
   width: 120px;
   height: 40px;
