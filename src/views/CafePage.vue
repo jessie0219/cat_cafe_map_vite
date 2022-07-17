@@ -94,6 +94,9 @@ export default {
 </script>
 
 <style scoped>
+h4 {
+  color: #ffd592;
+}
 button.SelectBtn {
   font-size: 0.8rem;
   height: 30px;
