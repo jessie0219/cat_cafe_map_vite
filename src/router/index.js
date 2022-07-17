@@ -1,8 +1,17 @@
+// import { createRouter, createWebHashHistory } from "vue-router";
+// const routes = [
+//     {
+//         // path: "/", component: () => import("../components/HelloWorld.vue"),
+//     }
+// ]
+// export default createRouter({
+//     history: createWebHashHistory(),
+//     routes
+// });
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/HomePage.vue'
 import Map from '../views/MapPage.vue'
-import CatCafe from '../views/CatCafePage.vue'
-import Cafe from '../views/CafePage.vue'
+
 const routes = [
     {
         path: '/',
@@ -13,16 +22,6 @@ const routes = [
         path: '/map',
         name: 'map',
         component: Map
-    },
-    {
-        path: '/catCafe',
-        name: 'catCafe',
-        component: CatCafe
-    },
-    {
-        path: '/cafe',
-        name: 'cafe',
-        component: Cafe
     },
 ]
 

@@ -15,29 +15,45 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">會員</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/member.png" alt="">
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">領養</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/adoption1.png" alt="">
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">貓的兩三事</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/catInfo1.png" alt="">
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">我的最愛</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/myFavorite1.png" alt="">
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">即時團購</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/groupPurchase1.png" alt="">
+            </router-link>
           </li>
           <br />
           <li class="nav-item">
-            <a class="nav-link" href="#">問題回報</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/problemReport1.png" alt="">
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">贊助</a>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/sponsor.png" alt="">
+            </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">設定</router-link>
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/setup.png" alt="">
+            </router-link>
           </li>
         </ul>
       </div>
