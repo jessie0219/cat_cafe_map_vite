@@ -5,6 +5,7 @@ import CatCafe from '../views/CatCafePage.vue'
 import CatCafeSelect from '../views/CatCafeSelectPage.vue'
 import Cafe from '../views/CafePage.vue'
 import AddLocation from '../views/AddLocation.vue'
+
 const routes = [
     {
         path: '/',
