@@ -3,13 +3,40 @@
   <div class="container">
     <div class="row">
       <div class="mt-4 text-center">
-        <button class="SelectBtn mx-2 px-2"><strong>全部</strong></button>
-        <button class="SelectBtn mx-2 px-2"><strong>正餐</strong></button>
-        <button class="SelectBtn mx-2 px-2"><strong>點心</strong></button>
-        <button class="SelectBtn mx-2 px-2"><strong>中途</strong></button>
-        <button class="SelectBtn mx-2 px-2">
-          <strong>寵物友善</strong>
-        </button>
+        <a v-if="!isShow" @click="toggle()">
+          <button class="SelectBtn mx-2 px-2"><strong>全部</strong></button></a
+        >
+        <a v-if="isShow" @click="toggle()">
+          <button class="SelectBtn2 mx-2 px-2"><strong>全部</strong></button></a
+        >
+        <a v-if="!isShow2" @click="toggle2()">
+          <button class="SelectBtn mx-2 px-2"><strong>正餐</strong></button></a
+        >
+        <a v-if="isShow2" @click="toggle2()">
+          <button class="SelectBtn2 mx-2 px-2"><strong>正餐</strong></button></a
+        >
+        <a v-if="!isShow3" @click="toggle3()">
+          <button class="SelectBtn mx-2 px-2"><strong>點心</strong></button></a
+        >
+        <a v-if="isShow3" @click="toggle3()">
+          <button class="SelectBtn2 mx-2 px-2"><strong>點心</strong></button></a
+        >
+        <a v-if="!isShow4" @click="toggle4()">
+          <button class="SelectBtn mx-2 px-2"><strong>中途</strong></button></a
+        >
+        <a v-if="isShow4" @click="toggle4()">
+          <button class="SelectBtn2 mx-2 px-2"><strong>中途</strong></button></a
+        >
+        <a v-if="!isShow5" @click="toggle5()">
+          <button class="SelectBtn mx-2 px-2">
+            <strong>寵物友善</strong>
+          </button></a
+        >
+        <a v-if="isShow5" @click="toggle5()">
+          <button class="SelectBtn2 mx-2 px-2">
+            <strong>寵物友善</strong>
+          </button></a
+        >
       </div>
       <div class="d-flex justify-content-center">
         <div class="row">
@@ -184,7 +211,30 @@ export default {
     Navbar,
   },
   data() {
-    return {};
+    return {
+      isShow: false,
+      isShow2: false,
+      isShow3: false,
+      isShow4: false,
+      isShow5: false,
+    };
+  },
+  methods: {
+    toggle() {
+      this.isShow = !this.isShow;
+    },
+    toggle2() {
+      this.isShow2 = !this.isShow2;
+    },
+    toggle3() {
+      this.isShow3 = !this.isShow3;
+    },
+    toggle4() {
+      this.isShow4 = !this.isShow4;
+    },
+    toggle5() {
+      this.isShow5 = !this.isShow5;
+    },
   },
 };
 </script>
@@ -198,6 +248,7 @@ button.SelectBtn {
   background-color: rgba(255, 255, 255, 0);
 }
 button.SelectBtn:hover {
+  color: #fff;
   border: 1px solid #ff835b;
   background-color: #ffb33a;
 }
@@ -207,6 +258,14 @@ button.SelectedBtn {
   border-radius: 14px;
   border: 1px solid #ff9d7e;
   background-color: #ffd592;
+}
+button.SelectBtn2 {
+  font-size: 0.8rem;
+  height: 30px;
+  color: #fff;
+  border-radius: 14px;
+  border: 1px solid #ff835b;
+  background-color: #ffb33a;
 }
 .catCafe {
   border: #ffb33a solid 2px;

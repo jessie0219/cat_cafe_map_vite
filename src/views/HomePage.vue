@@ -1,11 +1,14 @@
 <template>
   <Navbar></Navbar>
   <div class="container-fluid home-scroll mt-5 mb-5">
-    <span class="home-scroll-text d-flex">
-      <img src="../assets/icon/search.png" alt="search">
-      <a href="#">&nbsp 以地址或捷運<br>&nbsp 找到離你最近的貓貓</a>
+    <router-link to="/map">
+      <span class="home-scroll-text d-flex">
+        <img src="../assets/icon/search.png" alt="search" />
+        <p>&nbsp;以地址或捷運<br />&nbsp;找到離你最近的貓貓</p>
       </span>
+    </router-link>
   </div>
+
   <div class="container-fluid d-flex justify-content-center">
     <div class="icon d-flex">
       <div class="adoption"></div>
@@ -24,10 +27,18 @@
   </div>
   <!-- 好康輪播discount -->
   <swiper :pagination="true" :modules="modules" class="mySwiper swiper1">
-    <swiper-slide class="swiper-slide1"><img src="../assets/icon/discount.png" alt="discount"></swiper-slide>
-    <swiper-slide class="swiper-slide1"><img src="../assets/icon/discount.png" alt="discount"></swiper-slide>
-    <swiper-slide class="swiper-slide1"><img src="../assets/icon/discount.png" alt="discount"></swiper-slide>
-    <swiper-slide class="swiper-slide1"><img src="../assets/icon/discount.png" alt="discount"></swiper-slide>
+    <swiper-slide class="swiper-slide1"
+      ><img src="../assets/icon/discount.png" alt="discount"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide1"
+      ><img src="../assets/icon/discount.png" alt="discount"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide1"
+      ><img src="../assets/icon/discount.png" alt="discount"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide1"
+      ><img src="../assets/icon/discount.png" alt="discount"
+    /></swiper-slide>
   </swiper>
   <div class="container">
     <p class="subtitle mt-5">領養他們</p>
@@ -43,14 +54,30 @@
     :modules="modules"
     class="mySwiper swiper2"
   >
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
-    <swiper-slide class="swiper-slide2"><img src="../assets/icon/adoptThem.png" alt="adoptThem"></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
+    <swiper-slide class="swiper-slide2"
+      ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
+    /></swiper-slide>
   </swiper>
   <div class="container">
     <p class="subtitle mt-5">獨家 限時特價</p>
@@ -69,96 +96,100 @@
     <swiper-slide class="swiper-slide3">
       <div class="timeLimit">
         <div class="card">
-            <div class="card-title"><img src="../assets/icon/adoptThem.png" alt="限時特價商品"></div>
-            <span class="line"></span>
-            <div class="card-txt">
-                <div class="lh-1 text-center">
-                <span class="title">【Monge】</span>
-                </div>
-                <div class="lh-sm">
-                <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br>
-                <span class="price">$1000</span><br>
-                <span class="price">$800</span><br>
-                </div>
-                <div class="lh-1 text-center">
-                <span class="title">6天 3:24</span>
-                </div>
-                
+          <div class="card-title">
+            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
+          </div>
+          <span class="line"></span>
+          <div class="card-txt">
+            <div class="lh-1 text-center">
+              <span class="title">【Monge】</span>
             </div>
+            <div class="lh-sm">
+              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
+              <span class="price">$1000</span><br />
+              <span class="price">$800</span><br />
+            </div>
+            <div class="lh-1 text-center">
+              <span class="title">6天 3:24</span>
+            </div>
+          </div>
         </div>
       </div>
     </swiper-slide>
     <swiper-slide class="swiper-slide3">
       <div class="timeLimit">
         <div class="card">
-            <div class="card-title"><img src="../assets/icon/adoptThem.png" alt="限時特價商品"></div>
-            <span class="line"></span>
-            <div class="card-txt">
-                <div class="lh-1 text-center">
-                <span class="title">【Monge】</span>
-                </div>
-                <div class="lh-sm">
-                <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br>
-                <span class="price">$1000</span><br>
-                <span class="price">$800</span><br>
-                </div>
-                <div class="lh-1 text-center">
-                <span class="title">6天 3:24</span>
-                </div>
-                
+          <div class="card-title">
+            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
+          </div>
+          <span class="line"></span>
+          <div class="card-txt">
+            <div class="lh-1 text-center">
+              <span class="title">【Monge】</span>
             </div>
+            <div class="lh-sm">
+              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
+              <span class="price">$1000</span><br />
+              <span class="price">$800</span><br />
+            </div>
+            <div class="lh-1 text-center">
+              <span class="title">6天 3:24</span>
+            </div>
+          </div>
         </div>
       </div>
     </swiper-slide>
     <swiper-slide class="swiper-slide3">
       <div class="timeLimit">
         <div class="card">
-            <div class="card-title"><img src="../assets/icon/adoptThem.png" alt="限時特價商品"></div>
-            <span class="line"></span>
-            <div class="card-txt">
-                <div class="lh-1 text-center">
-                <span class="title">【Monge】</span>
-                </div>
-                <div class="lh-sm">
-                <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br>
-                <span class="price">$1000</span><br>
-                <span class="price">$800</span><br>
-                </div>
-                <div class="lh-1 text-center">
-                <span class="title">6天 3:24</span>
-                </div>
-                
+          <div class="card-title">
+            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
+          </div>
+          <span class="line"></span>
+          <div class="card-txt">
+            <div class="lh-1 text-center">
+              <span class="title">【Monge】</span>
             </div>
+            <div class="lh-sm">
+              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
+              <span class="price">$1000</span><br />
+              <span class="price">$800</span><br />
+            </div>
+            <div class="lh-1 text-center">
+              <span class="title">6天 3:24</span>
+            </div>
+          </div>
         </div>
       </div>
     </swiper-slide>
     <swiper-slide class="swiper-slide3">
       <div class="timeLimit">
         <div class="card">
-            <div class="card-title"><img src="../assets/icon/adoptThem.png" alt="限時特價商品"></div>
-            <span class="line"></span>
-            <div class="card-txt">
-                <div class="lh-1 text-center">
-                <span class="title">【Monge】</span>
-                </div>
-                <div class="lh-sm">
-                <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br>
-                <span class="price">$1000</span><br>
-                <span class="price">$800</span><br>
-                </div>
-                <div class="lh-1 text-center">
-                <span class="title">6天 3:24</span>
-                </div>
-                
+          <div class="card-title">
+            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
+          </div>
+          <span class="line"></span>
+          <div class="card-txt">
+            <div class="lh-1 text-center">
+              <span class="title">【Monge】</span>
             </div>
+            <div class="lh-sm">
+              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
+              <span class="price">$1000</span><br />
+              <span class="price">$800</span><br />
+            </div>
+            <div class="lh-1 text-center">
+              <span class="title">6天 3:24</span>
+            </div>
+          </div>
         </div>
       </div>
     </swiper-slide>
   </swiper>
   <div class="container">
-    <p class="more mt-1 text-end "><a href="">more... &nbsp</a></p>
+    <p class="more mt-1 text-end"><a href="">more...&nbsp;</a></p>
   </div>
- <homeTop></homeTop>
+  <homeTop></homeTop>
   <Footer></Footer>
 </template>
 
@@ -199,24 +230,23 @@ export default {
 
 <style scoped>
 .home-scroll {
-background-image: url(../assets/icon/rectangle.png);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-padding-top: 20px;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 258px;
-height: 174px;
-
+  background-image: url(../assets/icon/rectangle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 258px;
+  height: 174px;
 }
 .home-scroll a {
-color: #fff;
-text-decoration:none;
-font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
-.home-scroll img{
+.home-scroll img {
   width: 36px;
   height: 36px;
 }
@@ -229,7 +259,7 @@ font-size: 16px;
 .adoption:hover {
   background-image: url("../assets/icon/adoptionHover.png");
 }
-.groupPurchase{
+.groupPurchase {
   background-image: url("../assets/icon/groupPurchase.png");
   width: 53px;
   height: 65px;
@@ -238,7 +268,7 @@ font-size: 16px;
 .groupPurchase:hover {
   background-image: url("../assets/icon/groupPurchaseHover.png");
 }
-.favorite{
+.favorite {
   background-image: url("../assets/icon/favorite.png");
   width: 53px;
   height: 65px;
@@ -247,7 +277,7 @@ font-size: 16px;
 .favorite:hover {
   background-image: url("../assets/icon/favoriteHover.png");
 }
-.catInfo{
+.catInfo {
   background-image: url("../assets/icon/catInfo.png");
   width: 53px;
   height: 65px;
@@ -256,17 +286,16 @@ font-size: 16px;
 .catInfo:hover {
   background-image: url("../assets/icon/catInfoHover.png");
 }
-.addCafe{
+.addCafe {
   background-image: url("../assets/icon/addCafe.png");
   width: 267px;
   height: 53px;
 }
-.addCafe:hover{
+.addCafe:hover {
   background-image: url("../assets/icon/addCafeHover.png");
 }
-.more a{
+.more a {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
 }
 </style>
-

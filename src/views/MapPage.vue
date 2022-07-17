@@ -97,13 +97,73 @@
         </div>
       </div>
       <div class="mt-4 mb-1">附近的貓咖</div>
-      <div class="d-flex">
+      <!-- 領養他們輪播adoptThem -->
+      <swiper
+        :slidesPerView="3"
+        :spaceBetween="10"
+        :freeMode="true"
+        :pagination="{
+          clickable: true,
+        }"
+        :modules="modules"
+        class="mySwiper swiper2"
+      >
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+        <swiper-slide class="swiper-slide2"
+          ><img
+            class="image"
+            src="../assets/icon/adoptThem.png"
+            alt="adoptThem"
+        /></swiper-slide>
+      </swiper>
+      <!-- <div class="d-flex">
         <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div>
-      </div>
+      </div> -->
       <div class="mt-4">
         <a
           v-if="!isShow"
@@ -153,6 +213,18 @@
 </template>
 
 <script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "../homeStyle/discount.css";
+import "../homeStyle/adoptThem.css";
+import "../homeStyle/timeLimit.css";
+
+// components
 import Navbar from "../components/CatNavbar.vue";
 import SelectLine from "../components/Map/SelectLine.vue";
 import BlueLine from "../components/Map/BlueLine.vue";
@@ -172,6 +244,8 @@ export default {
     GreenLine,
     OrangeLine,
     YellowLine,
+    Swiper,
+    SwiperSlide,
   },
   data() {
     return {
@@ -398,7 +472,7 @@ button.Y a {
   background: white;
   width: 40%;
   height: 50%;
-  z-index: 1;
+  z-index: 200;
   margin: 25% auto;
   overflow: auto;
   border-radius: 20px;
@@ -509,5 +583,12 @@ button.distance:focus {
 .distanceSendBtn:hover {
   color: #fff;
   background-color: #ffb33a;
+}
+.image {
+  width: 150px;
+  height: 150px;
+}
+.mySwiper {
+  z-index: -1;
 }
 </style>
