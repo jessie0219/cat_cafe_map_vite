@@ -210,6 +210,7 @@
   <div class="text-center">
     <div v-if="isShow" v-is="changeView"></div>
   </div>
+  <homeTop></homeTop>
 </template>
 
 <script>
@@ -233,6 +234,7 @@ import RedLine from "../components/Map/RedLine.vue";
 import GreenLine from "../components/Map/GreenLine.vue";
 import OrangeLine from "../components/Map/OrangeLine.vue";
 import YellowLine from "../components/Map/YellowLine.vue";
+import homeTop from "../components/homeTop.vue";
 
 export default {
   components: {
@@ -246,6 +248,7 @@ export default {
     YellowLine,
     Swiper,
     SwiperSlide,
+    homeTop,
   },
   data() {
     return {

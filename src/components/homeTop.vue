@@ -85,9 +85,10 @@ html, body {
   right: 0;
   margin: 10px 1px;
   z-index: 100;
+  opacity: 90%;
 }
 .floating-container:hover {
-  height: 300px;
+  height: 140px;
 }
 .floating-container:hover .floating-button {
   -webkit-transform: translatey(5px);
@@ -97,16 +98,16 @@ html, body {
   display: none;
 }
 .floating-container:hover .element-container .float-element:nth-child(1) {
-  -webkit-animation: come-in 0.4s forwards 0.2s;
-          animation: come-in 0.4s forwards 0.2s;
+  -webkit-animation: come-in 0.4s forwards 0.1s;
+          animation: come-in 0.4s forwards 0.1s;
 }
 .floating-container:hover .element-container .float-element:nth-child(2) {
-  -webkit-animation: come-in 0.4s forwards 0.4s;
-          animation: come-in 0.4s forwards 0.4s;
+  -webkit-animation: come-in 0.4s forwards 0.3s;
+          animation: come-in 0.4s forwards 0.3s;
 }
 .floating-container:hover .element-container .float-element:nth-child(3) {
-  -webkit-animation: come-in 0.4s forwards 0.6s;
-          animation: come-in 0.4s forwards 0.6s;
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
 }
 .floating-container .floating-button {
   position: absolute;
