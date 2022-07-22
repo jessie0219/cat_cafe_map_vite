@@ -1,0 +1,18 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$secondary: rgb(253, 213, 146);
+$primary: rgb(246, 146, 71);
+
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Bootstrap and its default variables
+
+// Optional Bootstrap components here
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+// etc

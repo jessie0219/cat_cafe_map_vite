@@ -1,0 +1,5 @@
+createUserWithEmailAndPassword(
+  authObject,
+  email,
+  password
+)
