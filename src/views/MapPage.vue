@@ -98,7 +98,7 @@
       </div>
       <div class="mt-4 mb-1">附近的貓咖</div>
       <!-- 領養他們輪播adoptThem -->
-      <swiper
+      <!-- <swiper
         :slidesPerView="3"
         :spaceBetween="10"
         :freeMode="true"
@@ -156,14 +156,14 @@
             src="../assets/icon/adoptThem.png"
             alt="adoptThem"
         /></swiper-slide>
-      </swiper>
-      <!-- <div class="d-flex">
+      </swiper> -->
+      <div class="d-flex justify-content-center">
         <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div>
-        <div class="catCafe mx-1"></div>
-        <div class="catCafe mx-1"></div>
-      </div> -->
+        <!-- <div class="catCafe mx-1"></div>
+        <div class="catCafe mx-1"></div> -->
+      </div>
       <div class="mt-4">
         <a
           v-if="!isShow"
@@ -188,7 +188,7 @@
           </button></a
         >
       </div>
-      <div v-if="isShow" class="mt-4">
+      <div v-if="isShow" class="mt-4 d-flex justify-content-center">
         <a type="submit" @click="tabChange(BrownLine)"
           ><button class="BR mx-1">BR</button></a
         ><a type="submit" @click="tabChange(RedLine)"
@@ -336,8 +336,8 @@ button.distanceBtn:hover {
   color: #fff;
 }
 .catCafe {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 20px;
   border: 1px solid #ffb881;
   background-color: rgba(255, 255, 255, 0);
@@ -367,7 +367,7 @@ button.lineBtnSelected {
 button.BR {
   color: #c38c31;
   font-size: small;
-  width: 60px;
+  width: 12vw;
   height: 30px;
   border-radius: 20px;
   border: 1px solid #c38c31;
@@ -383,7 +383,7 @@ button.BR a {
 button.R {
   color: #e3002d;
   font-size: small;
-  width: 60px;
+  width: 12vw;
   height: 30px;
   border-radius: 20px;
   border: 1px solid #e3002d;
@@ -399,7 +399,7 @@ button.R a {
 button.G {
   color: #018659;
   font-size: small;
-  width: 60px;
+  width: 12vw;
   height: 30px;
   border-radius: 20px;
   border: 1px solid #018659;
@@ -415,7 +415,7 @@ button.G a {
 button.O {
   color: #f8b51c;
   font-size: small;
-  width: 60px;
+  width: 12vw;
   height: 30px;
   border-radius: 20px;
   border: 1px solid #f8b51c;
@@ -431,7 +431,7 @@ button.O a {
 button.BL {
   color: #0070bc;
   font-size: small;
-  width: 60px;
+  width: 12vw;
   height: 30px;
   border-radius: 20px;
   border: 1px solid #0070bc;
@@ -447,7 +447,7 @@ button.BL a {
 button.Y {
   color: #ffe707;
   font-size: small;
-  width: 60px;
+  width: 12vw;
   height: 30px;
   border-radius: 20px;
   border: 1px solid #ffe707;
@@ -491,6 +491,8 @@ button.Y a {
 .window-content .innerContent {
   display: inline-block;
   vertical-align: middle;
+  width: 80vw;
+  height: auto;
   line-height: 100%;
 }
 .window-content input {
@@ -519,9 +521,9 @@ button.Y a {
 
 #window-pop {
   background: white;
-  width: 40%;
+  width: 80%;
   height: 50%;
-  z-index: 1;
+  z-index: 100;
   margin: 25% auto;
   overflow: auto;
   border-radius: 20px;
@@ -534,11 +536,11 @@ button.Y a {
   text-align: center;
 }
 
-.window-content .innerContent {
+/* .window-content .innerContent {
   display: inline-block;
   vertical-align: middle;
   line-height: 100%;
-}
+} */
 .window-content input {
   line-height: 30px;
 }
@@ -553,7 +555,9 @@ button.Y a {
   color: #fff;
 }
 button.distance {
-  padding: 10px;
+  padding: 5px;
+  width: auto;
+  font-size: 0.8rem;
   border-radius: 14px;
   border: 1px solid #ffb881;
   background-color: rgba(255, 255, 255, 0);
@@ -569,9 +573,9 @@ button.distance:focus {
 }
 #window-pop-distance {
   background: white;
-  width: 50%;
+  width: 80%;
   height: 50%;
-  z-index: 1;
+  z-index: 100;
   margin: 25% auto;
   overflow: auto;
   border-radius: 20px;
