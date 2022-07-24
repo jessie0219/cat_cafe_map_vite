@@ -35,7 +35,12 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/groupbuying">
+              <img src="../assets/icon/groupPurchase1.png" alt="" />
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/discount">
               <img src="../assets/icon/groupPurchase1.png" alt="" />
             </router-link>
           </li>
