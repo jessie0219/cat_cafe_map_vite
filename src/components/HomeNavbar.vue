@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/login">
               <img src="../assets/icon/member.png" alt="">
             </router-link>
           </li>
