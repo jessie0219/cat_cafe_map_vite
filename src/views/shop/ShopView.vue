@@ -131,7 +131,7 @@
 
 </template>
 <script>
-import Navbar from '../../components/HomeNavbar.vue'
+import Navbar from '../../components/CatNavbar.vue'
 
 
 export default{

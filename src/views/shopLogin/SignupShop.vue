@@ -97,7 +97,7 @@
 
 </template>
 <script>
-import Navbar from '../../components/HomeNavbar.vue'
+import Navbar from '../../components/CatNavbar.vue'
 // import Footer from '../components/HomeFooter.vue'
 
 export default{

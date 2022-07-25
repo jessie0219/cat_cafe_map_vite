@@ -48,7 +48,7 @@ const routes = [
         path: "/shop_setting", component: () => import("../views/shop/ShopSetting.vue"),
     },
     {
-        // path: "/shop_home", component: () => import("../views/shop/ShopSetting.vue"),
+        path: "/shop_home", component: () => import("../views/shop/ShopSetting.vue"),
     },
     {
         path: "/cart", component: () => import("../views/user/CartView.vue"),
