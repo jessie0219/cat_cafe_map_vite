@@ -69,7 +69,7 @@
     </div>
   </div>
   <div class="col-12 text-center">
-    <button class="btn  rounded-pill px-5 py-2" type="submit" >免費註冊</button>
+    <button class="btn  rounded-pill px-5 py-2" type="submit" @click="usersignUP()" >免費註冊</button>
   </div>
 </form>
 
@@ -81,8 +81,8 @@
 <script>
 // import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
 // import { auth } from '../firebase/init.js'
-import { createUserWithEmailAndPassword ,updateProfile} from 'firebase/auth'
-import { auth } from '../../firebase/init.js'
+// import { createUserWithEmailAndPassword ,updateProfile} from 'firebase/auth'
+// import { auth } from '../../firebase/init.js'
 
 
 import Navbar from '../../components/HomeNavbar.vue'

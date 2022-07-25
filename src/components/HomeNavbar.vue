@@ -7,7 +7,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">會員</a>
+            <!-- <a class="nav-link " aria-current="page" href="#">會員</a> -->
+            <router-link to="/user_setting" class="nav-link " aria-current="page">會員</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">領養</a>

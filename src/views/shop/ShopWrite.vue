@@ -1,9 +1,9 @@
 <template>
 <Navbar></Navbar>
+<form action="">
 
 <div class="container-fluid mt-5">
     <div class="row justify-content-center text-center">
-
 
 
 
@@ -39,7 +39,7 @@
         <div class="col-10 border-pri  px-2 py-3 text-start">
             <div class="my-3 mx-2">
             <h5>營業時間</h5>
-            <input type="checkbox">星期一<input type="time"><input type="time"><br>
+            <input type="checkbox">星期一<input type="time" v-model="start_time"><input type="time"><br>
             <input type="checkbox">星期二<input type="time"><input type="time"><br>
             <input type="checkbox">星期三<input type="time"><input type="time"><br>
             <input type="checkbox">星期四<input type="time"><input type="time"><br>
@@ -142,10 +142,10 @@
 
 <!-- <button class="rounded-pill btn pri px-5 mt-3 text-center col-5 my-5">存檔</button> -->
 <button class="rounded-pill btn pri px-1 mt-3 text-center col-4 my-5 mx-1">取消變更</button>
-<button class="rounded-pill btn pri px-1 mt-3 text-center col-4 my-5 mx-1">確認變更</button>
-
+<button class="rounded-pill btn pri px-1 mt-3 text-center col-4 my-5 mx-1" @click="update()">確認變更</button>
     </div>
 </div>
+</form>
 
 </template>
 <script>
@@ -161,11 +161,40 @@ export default{
     },
     data() {
         return {
-            form:{},
+            start_time:'',
+            form:{
+                shopname:'',
+                tags:[],
+                shopimg:'',
+                shopaddress:'',
+                news:[
+                    {
+                        title:'',
+                        content:'',
+                    }
+                ],
+                shopinfo:[
+                    {
+                        "營業時間":{
+                            mon:'',
+
+                        }
+                    
+
+                    }
+                ],
+
+
+
+
+            },
 
         }
     },
      methods:{
+        update(){
+            console.log(this.start_time)
+        }
          
             },
 }
