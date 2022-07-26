@@ -25,7 +25,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/allaboutcatnav">
               <img src="../assets/icon/catInfo1.png" alt="">
             </router-link>
           </li>
