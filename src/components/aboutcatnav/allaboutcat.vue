@@ -1,14 +1,30 @@
 <template>
   <Navbar></Navbar>
     <div class="container">
-
     <div class="d-flex justify-content-center">
         <div class="row">
             <div class="col-md-4">
 
+                <div class="mt-4">
+                <router-link class="link text-center" to="/newcatnav"><h4 class="card-title">新手養貓</h4></router-link>
+                <div class="allaboutcatcard allaboutcatcard2" >
+                  <div class="bbody">
+                    <div class="card-body">
+                      <router-link class="link" to="/newcatnav"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
+                      <router-link class="link" to="/newcatnav"><p class="text-area">※ 養貓新手攻略-養貓前要準備的空間、環境配置和收納篇</p> </router-link>
+                      <router-link class="link" to="/newcatnav"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
+                      <router-link class="link" to="/newcatnav"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
+                      <router-link class="link" to="/newcatnav"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
+                      <router-link class="link" to="/newcatnav"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
+                    </div>
+                  </div>
+                  <router-link class="link mmore text-end" to="/newcatnav"><h6 class="mmore">more...</h6> </router-link> 
+                </div>
+              </div>
+
               <div class="mt-4">
                 <router-link class="link text-center" to="/cafe"><h4 class="card-title">多貓家庭</h4></router-link>
-                <div class="allaboutcatcard mt-4 allaboutcatcard2" >
+                <div class="allaboutcatcard allaboutcatcard2" >
                   <div class="bbody">
                     <div class="card-body">
                       <router-link class="link" to="/cafe"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
@@ -25,7 +41,7 @@
 
               <div class="mt-4">
                 <router-link class="link text-center" to="/cafe"><h4 class="card-title">多貓家庭</h4></router-link>
-                <div class="allaboutcatcard mt-4 allaboutcatcard2" >
+                <div class="allaboutcatcard allaboutcatcard2" >
                   <div class="bbody">
                     <div class="card-body">
                       <router-link class="link" to="/cafe"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
@@ -42,7 +58,7 @@
 
               <div class="mt-4">
                 <router-link class="link text-center" to="/cafe"><h4 class="card-title">多貓家庭</h4></router-link>
-                <div class="allaboutcatcard mt-4 allaboutcatcard2" >
+                <div class="allaboutcatcard allaboutcatcard2" >
                   <div class="bbody">
                     <div class="card-body">
                       <router-link class="link" to="/cafe"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
@@ -54,23 +70,6 @@
                     </div>
                   </div>
                   <router-link class="link mmore text-end" to="/cafe"><h6 class="mmore">more...</h6> </router-link> 
-                </div>
-              </div>
-
-              <div class="mt-4">
-                <router-link class="link text-center" to="/cafe"><h4 class="card-title">多貓家庭</h4></router-link>
-                <div class="allaboutcatcard mt-4 allaboutcatcard2" >
-                  <div class="bbody">
-                    <div class="card-body">
-                      <router-link class="link" to="/cafe"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
-                      <router-link class="link" to="/cafe"><p class="text-area">※ 養貓新手攻略-養貓前要準備的空間、環境配置和收納篇</p> </router-link>
-                      <router-link class="link" to="/cafe"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
-                      <router-link class="link" to="/cafe"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
-                      <router-link class="link" to="/cafe"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
-                      <router-link class="link" to="/cafe"><p class="text-area">※貓奴必學：六招增加貓喝水量貓奴必學：六招增加貓喝水量</p> </router-link>
-                    </div>
-                  </div>
-                  <router-link class="link mmore text-end" to="/cafe"><h6 class="mmore">more...more...more...</h6> </router-link> 
                 </div>
               </div>
 
@@ -80,7 +79,6 @@
             </div>
         </div>
     </div>
-<br>
     </div>
 </template>
 

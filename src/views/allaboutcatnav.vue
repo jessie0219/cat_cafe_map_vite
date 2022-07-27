@@ -1,17 +1,13 @@
 <template>
   <Navbar></Navbar>
     <div class="container">
-        <div class="row mt-4 text-center d-flex">
-
-          <div class="mt-4">
-            <a type="submit" @click="tabChange(allaboutcat)"><button class="allaboutBtn mx-2 px-2">全部</button></a>
+        <div class="row mt-4 text-center justify-content-center">
+          <div class="mt-4 col-9"><!-- mx-auto單個區塊水平居中 -->
+            <a type="submit" @click="tabChange(allaboutcat)"><button class="allaboutBtn mx-2 px-2 ">全部</button></a>
             <a type="submit" @click="tabChange(newcat)"><button class="allaboutBtn mx-2 px-2">新手養貓</button></a>
-            <a type="submit" @click="tabChange(muchcat)"><button class="allaboutBtn mx-2 px-2">多貓家庭</button></a>
-            <a type="submit" @click="tabChange(oldcat)"><button class="allaboutBtn mx-2 px-2">老貓須知</button></a>
-            <a type="submit" @click="tabChange(catsay)"><button class="allaboutBtn mx-2 px-2">貓咪語言</button></a>
-
-
-            <a type="submit" @click="tabChange(catsay)"><button class="allaboutBtn mx-2 px-2">貓咪語言</button></a>
+            <a type="submit" @click="tabChange(muchcat)"><button class="allaboutBtn mx-2 px-2 ">多貓家庭</button></a>
+            <a type="submit" @click="tabChange(oldcat)"><button class="allaboutBtn mx-2 px-2 ">老貓須知</button></a>
+            <a type="submit" @click="tabChange(catsay)"><button class="allaboutBtn mx-2 px-2 ">貓咪語言</button></a>
           </div>
 
         </div>
@@ -63,7 +59,7 @@ export default {
 <style>
 button.allaboutBtn {
     font-size: 0.8rem;
-  
+  margin: 5px;
   height: 30px;
   border: 1px solid #ffb881;
   background-color: rgba(255, 255, 255, 0);
