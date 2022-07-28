@@ -16,43 +16,43 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link class="nav-link" to="/login">
-              <img src="../assets/icon/member.png" alt="">
+              <img src="../assets/icon/member.png" alt="" />
             </router-link>
           </li>
+          <!-- <li class="nav-item">
+            <router-link class="nav-link" to="/map">
+              <img src="../assets/icon/adoption1.png" alt="" />
+            </router-link>
+          </li> -->
           <li class="nav-item">
             <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/adoption1.png" alt="">
+              <img src="../assets/icon/catInfo1.png" alt="" />
             </router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/catInfo1.png" alt="">
+              <img src="../assets/icon/myFavorite1.png" alt="" />
             </router-link>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/myFavorite1.png" alt="">
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/groupPurchase1.png" alt="">
+            <router-link class="nav-link" to="/groupbuying">
+              <img src="../assets/icon/groupPurchase1.png" alt="" />
             </router-link>
           </li>
           <br />
           <li class="nav-item">
             <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/problemReport1.png" alt="">
+              <img src="../assets/icon/problemReport1.png" alt="" />
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/sponsor.png" alt="">
+              <img src="../assets/icon/sponsor.png" alt="" />
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/map">
-              <img src="../assets/icon/setup.png" alt="">
+              <img src="../assets/icon/setup.png" alt="" />
             </router-link>
           </li>
         </ul>

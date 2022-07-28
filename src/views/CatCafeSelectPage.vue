@@ -1,39 +1,64 @@
 <template>
   <Navbar></Navbar>
+  <div class="container mt-4 text-center">
+    <span><strong>點選篩選</strong> </span>
+    <button class="LocationSelectBtn mx-2 px-2">
+      <strong>選擇位置</strong>
+    </button>
+    <button class="LocationSelectBtn mx-2 px-2">
+      <strong>&lt;10KM</strong>
+    </button>
+  </div>
   <div class="container">
     <div class="row">
-      <div class="mt-4 text-center">
+      <div class="mt-2 text-center">
         <a v-if="!isShow" @click="toggle()">
-          <button class="SelectBtn mx-2 px-2"><strong>全部</strong></button></a
+          <button class="SelectBtn mt-2 mx-2 px-2">
+            <strong>全部</strong>
+          </button></a
         >
         <a v-if="isShow" @click="toggle()">
-          <button class="SelectBtn2 mx-2 px-2"><strong>全部</strong></button></a
+          <button class="SelectBtn2 mt-2 mx-2 px-2">
+            <strong>全部</strong>
+          </button></a
         >
         <a v-if="!isShow2" @click="toggle2()">
-          <button class="SelectBtn mx-2 px-2"><strong>正餐</strong></button></a
+          <button class="SelectBtn mt-2 mx-2 px-2">
+            <strong>正餐</strong>
+          </button></a
         >
         <a v-if="isShow2" @click="toggle2()">
-          <button class="SelectBtn2 mx-2 px-2"><strong>正餐</strong></button></a
+          <button class="SelectBtn2 mt-2 mx-2 px-2">
+            <strong>正餐</strong>
+          </button></a
         >
         <a v-if="!isShow3" @click="toggle3()">
-          <button class="SelectBtn mx-2 px-2"><strong>點心</strong></button></a
+          <button class="SelectBtn mt-2 mx-2 px-2">
+            <strong>點心</strong>
+          </button></a
         >
         <a v-if="isShow3" @click="toggle3()">
-          <button class="SelectBtn2 mx-2 px-2"><strong>點心</strong></button></a
+          <button class="SelectBtn2 mt-2 mx-2 px-2">
+            <strong>點心</strong>
+          </button></a
         >
         <a v-if="!isShow4" @click="toggle4()">
-          <button class="SelectBtn mx-2 px-2"><strong>中途</strong></button></a
+          <button class="SelectBtn mt-2 mx-2 px-2">
+            <strong>中途</strong>
+          </button></a
         >
         <a v-if="isShow4" @click="toggle4()">
-          <button class="SelectBtn2 mx-2 px-2"><strong>中途</strong></button></a
+          <button class="SelectBtn2 mt-2 mx-2 px-2">
+            <strong>中途</strong>
+          </button></a
         >
         <a v-if="!isShow5" @click="toggle5()">
-          <button class="SelectBtn mx-2 px-2">
+          <button class="SelectBtn mt-2 mx-2 px-2">
             <strong>寵物友善</strong>
           </button></a
         >
         <a v-if="isShow5" @click="toggle5()">
-          <button class="SelectBtn2 mx-2 px-2">
+          <button class="SelectBtn2 mt-2 mx-2 px-2">
             <strong>寵物友善</strong>
           </button></a
         >
@@ -194,7 +219,6 @@
                 </div>
               </div>
             </div>
-            <!-- 上面先寫死，接api後可以刪除留template -->
           </div>
         </div>
       </div>
@@ -279,5 +303,12 @@ button.SelectBtn2 {
 .link {
   color: black;
   text-decoration: none;
+}
+.LocationSelectBtn {
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  border: #fba524 solid 1px;
+  background-color: #fba524;
 }
 </style>
