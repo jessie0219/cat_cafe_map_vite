@@ -9,7 +9,7 @@
         <button class="SelectBtn mx-2 px-2"><strong>中途</strong></button>
       </div>
       <div class="mt-4 container text-center">
-        <img src="https://fakeimg.pl/500x500/" />
+        <img src="https://fakeimg.pl/300x300/" />
       </div>
     </div>
     <div class="mt-4 container text-center">
@@ -94,6 +94,9 @@ export default {
 </script>
 
 <style scoped>
+h4 {
+  color: #ffd592;
+}
 button.SelectBtn {
   font-size: 0.8rem;
   height: 30px;
