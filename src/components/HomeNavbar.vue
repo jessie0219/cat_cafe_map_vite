@@ -20,7 +20,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/adoption">
               <img src="../assets/icon/adoption1.png" alt="">
             </router-link>
           </li>
