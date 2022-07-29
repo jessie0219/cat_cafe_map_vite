@@ -17,18 +17,19 @@
         >
       </div>
 
-      <Footer class="bottom-0 px-5"></Footer>
+     
     </div>
   </div>
+   <Footer></Footer>
 </template>
 <script>
 import Navbar from "../components/CatNavbar.vue";
-import Footer from "../components/HomeFooter.vue";
+ import Footer from "../components/HomeFooter.vue";
 
 export default {
   components: {
     Navbar,
-    Footer,
+     Footer,
   },
   data() {
     return {
