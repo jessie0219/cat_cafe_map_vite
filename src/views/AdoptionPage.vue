@@ -19,7 +19,7 @@
           <br>
           <div class="text-center">
             <strong>
-              <router-link class="nav-link" to="/AdoptionAll" >查看更多</router-link>
+              <router-link class="nav-link" to="/adoptionall" >查看更多</router-link>
             </strong>
           </div>
           <br>

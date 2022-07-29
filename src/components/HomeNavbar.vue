@@ -14,11 +14,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          <!-- 會員 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/login">
               <img src="../assets/icon/member.png" alt="" />
             </router-link>
           </li>
+          <!-- 領養 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/adoption">
               <img src="../assets/icon/adoption1.png" alt="">
@@ -29,6 +31,7 @@
               <img src="../assets/icon/adoption1.png" alt="" />
             </router-link>
           </li> -->
+          <!-- 貓的二三事 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/allaboutcatnav">
               <img src="../assets/icon/catInfo1.png" alt="" />
@@ -39,17 +42,20 @@
               <img src="../assets/icon/myFavorite1.png" alt="" />
             </router-link>
           </li> -->
+          <!-- 限時團購 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/groupbuying">
               <img src="../assets/icon/groupPurchase1.png" alt="" />
             </router-link>
           </li>
-          <br />
+          
+          <!-- 問題回報 -->
           <li class="nav-item">
             <router-link class="nav-link" to="#">
               <img src="../assets/icon/problemReport1.png" alt="" />
             </router-link>
           </li>
+          <!-- 贊助 -->
           <li class="nav-item">
             <router-link class="nav-link" to="#">
               <img src="../assets/icon/sponsor.png" alt="" />

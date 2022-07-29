@@ -11,11 +11,15 @@
 
   <div class="container-fluid d-flex justify-content-center">
     <div class="icon d-flex">
-      <div class="adoption"></div>
-
+      <!-- 領養 -->
+      <div class="adoption">
+        <router-link class="nav-link" to="/adoption"></router-link>
+      </div>
+      <!-- 限時團購 -->
       <div class="groupPurchase">
         <router-link class="nav-link" to="/groupbuying"></router-link>
       </div>
+      
       <div class="favorite"></div>
       <div class="catInfo"></div>
     </div>
