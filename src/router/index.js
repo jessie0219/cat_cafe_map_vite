@@ -23,6 +23,15 @@ import InfoView from "../views/user/InfoView.vue";
 import ShopInfo from "../views/shop/ShopInfo.vue";
 import ShopWrite from "../views/shop/ShopWrite.vue";
 
+import Navbar from '../components/HomeNavbar.vue'
+import Footer from '../components/HomeFooter.vue'
+
+import allaboutcatnav from '../views/allaboutcatnav.vue'
+import allaboutcat from '../components/aboutcatnav/allaboutcat.vue'
+import newcat from '../components/aboutcatnav/newcat.vue'
+import muchcat from '../components/aboutcatnav/muchcat.vue'
+import oldcat from '../components/aboutcatnav/oldcat.vue'
+import catsay from '../components/aboutcatnav/catsay.vue'
 
 //貓咪兩三事
 import allaboutcatnav from "../views/allaboutcatnav.vue";
@@ -46,6 +55,18 @@ import Cart from "../views/GroupBuying/Cart.vue";
 //貓咖好康
 import Discount from "../views/Discount/Discount.vue";
 import DiscountDetail from "../views/Discount/DiscountDetail.vue";
+
+import Tenthingstoknow from '../components/article/Tenthingstoknow.vue'
+import Suitable from '../components/article/Suitable.vue'
+import storage from '../components/article/storage.vue'
+import Drinkwater from '../components/article/Drinkwater.vue'
+
+
+import GroupBuying from '../views/GroupBuying/GroupBuying.vue'
+import Product from '../views/GroupBuying/ProductDetail.vue'
+import Cart from '../views/GroupBuying/Cart.vue'
+import Discount from '../views/Discount/Discount.vue'
+import DiscountDetail from '../views/Discount/DiscountDetail.vue'
 
 const routes = [
   {
@@ -242,7 +263,146 @@ const routes = [
     name: "discountdetail",
     component: DiscountDetail,
   },
-];
+
+    {
+        path: '/catCafe',
+        name: 'catCafe',
+        component: CatCafe
+    },
+    {
+        path: '/cafe',
+        name: 'cafe',
+        component: Cafe
+    },
+    {
+        path: '/HomeNavbar',
+        name: 'HomeNavbar',
+        component: Navbar
+    },
+    {
+        path: '/HomeFooter',
+        name: 'HomeFooter',
+        component: Footer
+    },
+    // aboutcatnav
+    {
+        path: '/allaboutcatnav',
+        name: 'allaboutcatnav',
+        component: allaboutcatnav
+    },
+    {
+        path: '/allaboutcat',
+        name: 'allaboutcat',
+        component: allaboutcat
+    },
+    {
+        path: '/newcat',
+        name: 'newcat',
+        component: newcat
+    },
+    {
+        path: '/muchcat',
+        name: 'muchcat',
+        component: muchcat
+    },
+    {
+        path: '/oldcat',
+        name: 'oldcat',
+        component: oldcat
+    },
+    {
+        path: '/catsay',
+        name: 'catsay',
+        component: catsay
+    },
+    // aboutnewcat
+    {
+        path: '/newcatnav',
+        name: 'newcatnav',
+        component: newcatnav
+    },
+    {
+        path: '/all',
+        name: 'all',
+        component: all
+    },
+    {
+        path: '/before',
+        name: 'before',
+        component: before
+    },
+    {
+        path: '/after',
+        name: 'after',
+        component: after
+    },
+    {
+        path: '/other',
+        name: 'other',
+        component: other
+    },
+
+    // article
+    {
+        path: '/Tenthingstoknow',
+        name: 'Tenthingstoknow',
+        component: Tenthingstoknow
+    },
+    {
+        path: '/Suitable',
+        name: 'Suitable',
+        component: Suitable
+    },
+    {
+        path: '/storage',
+        name: 'storage',
+        component: storage
+    },
+    {
+        path: '/Drinkwater',
+        name: 'Drinkwater',
+        component: Drinkwater
+    },
+    
+
+
+    {
+        path: '/addLocation',
+        name: 'AddLocation',
+        component: AddLocation
+    },
+    {
+        path: '/catCafeSelect',
+        name: 'CatCafeSelect',
+        component: CatCafeSelect
+    },
+    {
+        path: '/groupbuying',
+        name: 'groupbuying',
+        component: GroupBuying
+    },
+    {
+        path: '/products/:id',
+        name: 'product',
+        component: Product
+    },
+    {
+        path: '/cart/',
+        name: 'cart',
+        component: Cart,
+    },
+    {
+        path: '/discount',
+        name: 'discount',
+        component: Discount
+    },
+    {
+        path: '/discountdetail',
+        name: 'discountdetail',
+        component: DiscountDetail
+    },
+
+]
 
 const router = createRouter({
   history: createWebHistory(),

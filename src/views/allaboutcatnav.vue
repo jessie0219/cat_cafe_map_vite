@@ -20,17 +20,18 @@
 </template>
 
 <script>
-import Navbar from "../components/CatNavbar.vue";
+import Navbar from "../components/HomeNavbar.vue";
+import Footer from "../components/HomeFooter.vue";
 import allaboutcat from "../components/aboutcatnav/allaboutcat.vue";
 import newcat from "../components/aboutcatnav/newcat.vue";
 import muchcat from "../components/aboutcatnav/muchcat.vue";
 import oldcat from "../components/aboutcatnav/oldcat.vue";
 import catsay from "../components/aboutcatnav/catsay.vue";
 
-
 export default {
     components: {
     Navbar,
+    Footer,
     allaboutcat,
     newcat,
     muchcat,

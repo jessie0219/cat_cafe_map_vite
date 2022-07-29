@@ -1,6 +1,4 @@
 <template>
-<!-- <h4 class="position-absolute">養貓前</h4> -->
-  <Navbar></Navbar>
     <div class="container">
     <div class="d-flex justify-content-center">
         <div class="row">
@@ -8,11 +6,11 @@
 
                 <div class="mt-4">
                 <router-link class="link text-center" to="/newcatnav"><h4 class="card-title">養貓前</h4></router-link>
-                <div class="allaboutcatcard allaboutcatcard2" >
+                <div class="allaboutcatcard allaboutcatcard4" >
                   <div class="bbody">
                     <div class="card-body">
                       <router-link class="link" to="/newcatnav"><p class="text-area">※ 你適合養貓嗎？貓奴的自我評估</p> </router-link>
-                      <router-link class="link" to="/newcatnav"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
+                      <router-link class="link" to="/Tenthingstoknow"><p class="text-area">※ 這十件事，養貓前你一定要知道！</p> </router-link>
                       <router-link class="link" to="/newcatnav"><p class="text-area">※ 品種貓vs米克斯？</p> </router-link>
                       <router-link class="link" to="/newcatnav"><p class="text-area">※ 養貓新手攻略-養貓前要準備的空間、環境配置和收納</p> </router-link>
                     </div>
@@ -23,7 +21,7 @@
 
               <div class="mt-4">
                 <router-link class="link text-center" to="/cafe"><h4 class="card-title">養貓中</h4></router-link>
-                <div class="allaboutcatcard allaboutcatcard2" >
+                <div class="allaboutcatcard allaboutcatcard4" >
                   <div class="bbody">
                     <div class="card-body">
                       <router-link class="link" to="/cafe"><p class="text-area">※ 貓咪肢體語言大揭密</p> </router-link>
@@ -38,7 +36,7 @@
 
               <div class="mt-4">
                 <router-link class="link text-center" to="/cafe"><h4 class="card-title">其他</h4></router-link>
-                <div class="allaboutcatcard allaboutcatcard2" >
+                <div class="allaboutcatcard allaboutcatcard4" >
                   <div class="bbody">
                     <div class="card-body">
                       <router-link class="link" to="/cafe"><p class="text-area">※ 貓咪肢體語言大揭密</p> </router-link>
@@ -59,10 +57,13 @@
 </template>
 
 <script>
-
+import Navbar from "../HomeNavbar.vue";
+import Footer from "../HomeFooter.vue";
 
 export default {
     components: {
+      Navbar,
+      Footer,
   },
   data() {
     return {
