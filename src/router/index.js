@@ -14,8 +14,10 @@ import Map from '../views/MapPage.vue'
 import CatCafe from '../views/CatCafePage.vue'
 import Cafe from '../views/cafePage.vue'
 
+import Navbar from '../components/HomeNavbar.vue'
+import Footer from '../components/HomeFooter.vue'
+
 import allaboutcatnav from '../views/allaboutcatnav.vue'
-import Navbar from '../components/CatNavbar.vue'
 import allaboutcat from '../components/aboutcatnav/allaboutcat.vue'
 import newcat from '../components/aboutcatnav/newcat.vue'
 import muchcat from '../components/aboutcatnav/muchcat.vue'
@@ -27,6 +29,11 @@ import all from '../components/aboutnewcat/all.vue'
 import before from '../components/aboutnewcat/before.vue'
 import after from '../components/aboutnewcat/after.vue'
 import other from '../components/aboutnewcat/other.vue'
+
+import Tenthingstoknow from '../components/article/Tenthingstoknow.vue'
+import Suitable from '../components/article/Suitable.vue'
+import storage from '../components/article/storage.vue'
+import Drinkwater from '../components/article/Drinkwater.vue'
 
 const routes = [
     {
@@ -49,16 +56,21 @@ const routes = [
         name: 'cafe',
         component: Cafe
     },
-
+    {
+        path: '/HomeNavbar',
+        name: 'HomeNavbar',
+        component: Navbar
+    },
+    {
+        path: '/HomeFooter',
+        name: 'HomeFooter',
+        component: Footer
+    },
+    // aboutcatnav
     {
         path: '/allaboutcatnav',
         name: 'allaboutcatnav',
         component: allaboutcatnav
-    },
-    {
-        path: '/CatNavbar',
-        name: 'CatNavbar',
-        component: Navbar
     },
     {
         path: '/allaboutcat',
@@ -85,7 +97,7 @@ const routes = [
         name: 'catsay',
         component: catsay
     },
-
+    // aboutnewcat
     {
         path: '/newcatnav',
         name: 'newcatnav',
@@ -110,6 +122,27 @@ const routes = [
         path: '/other',
         name: 'other',
         component: other
+    },
+    // article
+    {
+        path: '/Tenthingstoknow',
+        name: 'Tenthingstoknow',
+        component: Tenthingstoknow
+    },
+    {
+        path: '/Suitable',
+        name: 'Suitable',
+        component: Suitable
+    },
+    {
+        path: '/storage',
+        name: 'storage',
+        component: storage
+    },
+    {
+        path: '/Drinkwater',
+        name: 'Drinkwater',
+        component: Drinkwater
     },
     
 ]

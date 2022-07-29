@@ -1,6 +1,7 @@
 <template>
   <Navbar></Navbar>
     <div class="container">
+
         <div class="row mt-4 text-center d-flex">
 
           <div class="mt-4">
@@ -13,14 +14,16 @@
         </div>
 
           <div class="">
-            <div v-is="changeView"></div>
+            <div v-is="changeView"></div> 
           </div>
 
     </div>
+    <Footer class="mt-4"></Footer>
 </template>
 
 <script>
-import Navbar from "../components/CatNavbar.vue";
+import Navbar from "../components/HomeNavbar.vue";
+import Footer from "../components/HomeFooter.vue";
 import all from "../components/aboutnewcat/all.vue";
 import before from "../components/aboutnewcat/before.vue";
 import after from "../components/aboutnewcat/after.vue";
@@ -30,6 +33,7 @@ import other from "../components/aboutnewcat/other.vue";
 export default {
     components: {
     Navbar,
+    Footer,
     all,
     before,
     after,

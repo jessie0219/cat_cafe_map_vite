@@ -42,6 +42,7 @@
   <div class="text-center">
     <div v-is="changeView"></div>
   </div>
+  
 </template>
 
 <script>
