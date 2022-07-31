@@ -21,9 +21,11 @@
             </div>   
                     <div class="card-body product-content">
                         <pa>
+                        <spana class="card-title fw-bold">{{product.brand}}</spana>
                         <spana class="card-title fw-bold">{{product.title}}</spana>
                         <br>
                         <spana class="card-text">{{product.description}}</spana>
+                        <spana class="card-text">{{product.forWho}}</spana>
                         <br>
                         <spana class="product-price">NT${{product.price}}</spana>
                         <br>

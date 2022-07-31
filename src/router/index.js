@@ -196,7 +196,7 @@ const routes = [
         component: Discount
     },
     {
-        path: '/discountdetail',
+        path: '/discountdetail/:id',
         name: 'discountdetail',
         component: DiscountDetail
     },

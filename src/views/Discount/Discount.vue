@@ -3,83 +3,18 @@
    <div class="container">
     <div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="d-flex justify-content-center px-2 h-100">
-                <div class="card my-4 ">
-                    <div class="px-0 img-hover-outer">
-                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjIRzXT3gRvAXgY8Wo13TRuNhGTu554hWsGyr3sc0efcfVmmkphmQN3m0_PVgZSAMbL1lKs0TqJJVgvzSnycql2bxZmbcIbZlG0zcfgMSZlpoCgWQ206LzKJNri9IQQg7LOX005-njuArmAdA2BiUsgEJLLFFvS8l4xQuIZ-OojWPtavUH-0EJVrsGoHA" class="card-img-top product-image " alt="折價詳情照片"
-                            style="width:100%;">
-                            <div class="img-hover-content">
-                                <router-link to="/discountdetail" class="text-light">
-                                <p class="text-center">給APP回饋，送神秘好禮>>立即填寫問卷調查<br>(點我看詳情)</p>
-                                </router-link>
-                            </div>
-                    </div>   
-                </div>
-            </div>
-            <div class="d-flex justify-content-center px-2 h-100">
-                <div class="card my-4 ">
-                    <div class="px-0 img-hover-outer">
-                        <img src="https://tokukai.com/webuploadpic/g0HZnE_210803_rec50_1040.png" class="card-img-top product-image " alt="折價詳情照片"
-                            style="width:100%;">
-                            <div class="img-hover-content">
-                                <router-link to="/discountdetail" class="text-light">
-                                <p class="text-center">推薦好友，首次下單再折$30元。（不限團購商品或貓餐廳使用）<br>(點我看詳情)</p>
-                                </router-link>
-                            </div>
-                    </div>   
-                </div>
-            </div>
-            <div class="d-flex justify-content-center px-2 h-100">
-                <div class="card my-4 ">
-                    <div class="px-0 img-hover-outer">
-                        <img src="https://tokukai.com/webuploadpic/g0HZnE_210803_rec50_1040.png" class="card-img-top product-image " alt="折價詳情照片"
-                            style="width:100%;">
-                            <div class="img-hover-content">
-                                <router-link to="/discountdetail" class="text-light">
-                                <p class="text-center">推薦好友，首次下單再折$30元。（不限團購商品或貓餐廳使用）<br>(點我看詳情)</p>
-                                </router-link>
-                            </div>
-                    </div>   
-                </div>
-            </div>
-            <div class="d-flex justify-content-center px-2 h-100">
-                <div class="card my-4 ">
-                    <div class="px-0 img-hover-outer">
-                        <img src="https://tokukai.com/webuploadpic/g0HZnE_210803_rec50_1040.png" class="card-img-top product-image " alt="折價詳情照片"
-                            style="width:100%;">
-                            <div class="img-hover-content">
-                                <router-link to="/discountdetail" class="text-light">
-                                <p class="text-center">推薦好友，首次下單再折$30元。（不限團購商品或貓餐廳使用）<br>(點我看詳情)</p>
-                                </router-link>
-                            </div>
-                    </div>   
-                </div>
-            </div>
-            <div class="d-flex justify-content-center px-2 h-100">
-                <div class="card my-4 ">
-                    <div class="px-0 img-hover-outer">
-                        <img src="https://tokukai.com/webuploadpic/g0HZnE_210803_rec50_1040.png" class="card-img-top product-image " alt="折價詳情照片"
-                            style="width:100%;">
-                            <div class="img-hover-content">
-                                <router-link to="/discountdetail" class="text-light">
-                                <p class="text-center">推薦好友，首次下單再折$30元。（不限團購商品或貓餐廳使用）<br>(點我看詳情)</p>
-                                </router-link>
-                            </div>
-                    </div>   
-                </div>
-            </div>
-            <div class="d-flex justify-content-center px-2 h-100">
-                <div class="card my-4 ">
-                    <div class="px-0 img-hover-outer">
-                        <img src="https://tokukai.com/webuploadpic/g0HZnE_210803_rec50_1040.png" class="card-img-top product-image " alt="折價詳情照片"
-                            style="width:100%;">
-                            <div class="img-hover-content">
-                                <router-link to="/discountdetail" class="text-light">
-                                <p class="text-center">推薦好友，首次下單再折$30元。（不限團購商品或貓餐廳使用）<br>(點我看詳情)</p>
-                                </router-link>
-                            </div>
-                    </div>   
-                </div>
+            <div class="d-flex justify-content-center px-2 h-100" v-for="item in discounts" :key="item.id">
+                <router-link :to="{ name: 'discountdetail', params: { id: item.id }}" class="product-link">
+                    <div class="card my-4 ">
+                        <div class="px-0 img-hover-outer">
+                            <img :src="item.imageUrl" class="card-img-top product-image " alt="折價詳情照片"
+                                style="width:100%;">
+                                <div class="img-hover-content">
+                                    <p class="text-center">{{item.description}}<br>(點我看詳情)</p>
+                                </div>
+                        </div>   
+                    </div>
+                </router-link>
             </div>
         </div>        
 </div>
@@ -91,7 +26,13 @@ import catnavbar from '/src/components/CatNavbar.vue'
 export default {
 components:{
     catnavbar
-}
+},
+
+computed: {
+  discounts: function(){
+     return this.$store.state.discounts
+  },
+  },
 }
 </script>
 
@@ -135,5 +76,8 @@ components:{
 }
 a{
     text-decoration: none;
+}
+.product-link{
+    text-decoration: none !important;
 }
 </style>
