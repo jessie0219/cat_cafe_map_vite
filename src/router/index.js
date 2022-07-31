@@ -133,7 +133,7 @@ const routes = [
   },
   {
     path: "/cart",
-    component: cartView 
+    component: cartView
   },
   {
     path: "/order",
@@ -141,19 +141,19 @@ const routes = [
   },
   {
     path: "/like",
-    component: LikeView 
+    component: LikeView
   },
   {
     path: "/info",
-    component:InfoView
+    component: InfoView
   },
   {
     path: "/shop_info",
-    component: ShopInfo 
+    component: ShopInfo
   },
   {
     path: "/shop_home_write",
-    component: ShopWrite 
+    component: ShopWrite
   },
   {
     path: "/catCafe",
@@ -237,11 +237,6 @@ const routes = [
     path: "/catCafeSelect",
     name: "CatCafeSelect",
     component: CatCafeSelect,
-  },
-  {
-    path: "/groupbuying",
-    name: "groupbuying",
-    component: GroupBuying,
   },
   {
     path: "/products/:id",
@@ -402,6 +397,57 @@ const routes = [
         component: DiscountDetail
     },
 
+  {
+    path: '/newcatnav',
+    name: 'newcatnav',
+    component: newcatnav
+  },
+  {
+    path: '/all',
+    name: 'all',
+    component: all
+  },
+  {
+    path: '/before',
+    name: 'before',
+    component: before
+  },
+  {
+    path: '/after',
+    name: 'after',
+    component: after
+  },
+  {
+    path: '/other',
+    name: 'other',
+    component: other
+  },
+
+  {
+    path: '/groupbuying',
+    name: 'groupbuying',
+    component: GroupBuying
+  },
+  {
+    path: '/products/:id',
+    name: 'product',
+    component: Product
+  },
+  {
+    path: '/cart/',
+    name: 'cart',
+    component: Cart,
+  },
+  {
+    path: '/discount',
+    name: 'discount',
+    component: Discount
+  },
+  {
+    path: '/discountdetail/:id',
+    name: 'discountdetail',
+    component: DiscountDetail
+  },
 ]
 
 const router = createRouter({

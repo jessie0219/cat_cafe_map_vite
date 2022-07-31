@@ -53,26 +53,96 @@
         </div>
       </div>
     </div>
-    <div class="news container mt-4 text-center d-flex justify-content-center">
-      <div class="InnerText align-self-center">店家公告/最新消息</div>
+    <div
+      class="container flex-column mt-4 text-center d-flex justify-content-center"
+    >
+      <div>
+        <div class="InnerText align-self-center">店家公告/最新消息</div>
+        <div class="content">
+          <div class="mt-3">
+            <div>
+              <h2><strong>本月公休</strong></h2>
+              <h6>2022 / 08 / 30</h6>
+              <hr />
+              <h2><strong>貓奴大召集</strong></h2>
+              <h6>2022 / 10 / 25</h6>
+              <hr />
+              <h2><strong>合作優惠</strong></h2>
+              <h6>活動時間 : 2022 / 08 ~ 2022 / 12</h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div
       class="container flex-column mt-4 text-center d-flex justify-content-center"
     >
-      <div class="InnerText align-self-center">
-        店家資訊
+      <div>
+        <div class="InnerText align-self-center">店家資訊</div>
         <div class="content">
           <div class="mt-3">
             <div>
               <h4><strong>營業時間</strong></h4>
               <h6>周一~周日(無休) 中午十二點~晚上九點</h6>
+              <hr />
               <h4><strong>採「時機制」計費</strong></h4>
               <h6>10分鐘40元<br />以10分鐘為單位<br />90分鐘以上不再加價</h6>
               <br />
               <h6>無低消壓力，不強迫點餐飲 !</h6>
               <br />
               <h6>飲料100元喝到飽</h6>
+              <hr />
+              <h4><strong>預約方式</strong></h4>
+              <h6>私訊粉絲團、電話</h6>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container flex-column mt-4 text-center d-flex justify-content-center"
+    >
+      <div>
+        <div class="InnerText align-self-center">店貓小檔案</div>
+        <div class="content">
+          <!-- <div class="mt-3">
+            <div></div>
+          </div> -->
+          <div class="container text-center">
+            <img src="https://fakeimg.pl/200x200/" />
+          </div>
+          <hr style="margin-top: -0.1rem; color: #f59246" />
+          <div style="margin-left: 40px" class="container">
+            <div class="text-start">姓名:松坂</div>
+            <div class="text-start">年齡:2歲</div>
+            <div class="text-start">性別:母</div>
+            <div class="text-start">品種:布偶貓</div>
+            <div class="text-start">介紹:傲嬌小公主，討厭被抱!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container flex-column mt-4 text-center d-flex justify-content-center"
+    >
+      <div>
+        <div class="InnerText align-self-center">中途貓咪</div>
+        <div class="content">
+          <!-- <div class="mt-3">
+            <div></div>
+          </div> -->
+          <div class="container text-center">
+            <img src="https://fakeimg.pl/200x200/" />
+          </div>
+          <hr style="margin-top: -0.1rem; color: #f59246" />
+          <div style="margin-left: 40px" class="container">
+            <div class="text-start">姓名:茶茶</div>
+            <div class="text-start">年齡:成年</div>
+            <div class="text-start">性別:母</div>
+            <div class="text-start">品種:咖啡虎斑米克斯</div>
+            <div class="text-start">狀態:已結扎</div>
+            <div class="text-start">更新日期:2022/08/10</div>
           </div>
         </div>
       </div>
@@ -122,13 +192,14 @@ button.SelectBtn {
   font-size: 30px;
 }
 .InnerText {
+  color: #fff;
   font-weight: bolder;
-  width: 75%;
+  width: 100%;
   height: 40px;
-  background-color: #ffd592;
+  background-color: #f59246;
 }
 .content {
   width: 100%;
-  border: #ffd592 solid 2px;
+  border: #f59246 solid 2px;
 }
 </style>
