@@ -17,8 +17,10 @@
       <img :src="item.imageUrl" class="img-fluid rounded-start product-in-cart-img" alt="...">
       <br>
       <span class="product-in-cart-text">
+        {{item.brand}}
       {{ item.title }} |
       {{item.description}}
+      {{item.forWho}}
       </span> 
     </div>
     <div class="col-8 ">
@@ -26,9 +28,9 @@
         <span class="card-title d-block">價錢 : NT${{ item.price }}</span>
         <div class="d-flex justify-content-center fs-5 ">
             <div class="me-3 product-num ">數量</div>
-            <diva class="ms-2 border border-2 rounded px-1 px-md-3 product-num " type="button">-</diva>
-            <div class="ms-2 border border-2 rounded px-3 px-md-5 product-num" >{{item.count}}</div>
-            <diva class="ms-2 border border-2 rounded px-1 px-md-3 product-num " type="button">+</diva>
+            <diva class="ms-2 border border-2 rounded px-1 px-md-3 product-num " type="button" @click="minusOne()">-</diva>
+            <div class="ms-2 border border-2 rounded px-3 px-md-5 product-num" >{{currentCount}}</div>
+            <diva class="ms-2 border border-2 rounded px-1 px-md-3 product-num " type="button" @click="addOne()">+</diva>
         </div>
         <div  class="d-flex justify-content-center mt-3 ms-5">
                       <divatc class=" border border-2 add-to-cart text-center py-1" type="button"
@@ -63,7 +65,7 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt-3 mb-3">
-      <divatc class=" border border-2 add-to-cart text-center py-1" type="button" @click="checkOut" :disabled="cartItems.length==0">
+      <divatc class=" border border-2 add-to-cart text-center py-1" type="button" @click="checkOut" v-if="cartItems.length!==0">
         結帳
       </divatc>
   </div>
@@ -91,12 +93,20 @@ computed: {
     itemsSubtotal() {
       return this.cartItems.reduce((total, item) => total + item.price, 0);
     },
-    
+    currentCount(){
+      return this.$store.getters.currentCount
+    }
      
   },
   methods: {
     removeFromCart(itemId) {
       this.$store.dispatch('removeFromCart', itemId)
+    },
+    addOne() {
+      this.$store.dispatch('addOne')
+    },
+    minusOne() {
+      this.$store.dispatch('minusOne')
     },
     checkOut(){
       alert('結帳成功!');
