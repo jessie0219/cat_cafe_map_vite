@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/HomePage.vue'
+import addStore from '../views/addStore.vue'
 import Map from '../views/MapPage.vue'
 import CatCafe from '../views/CatCafePage.vue'
 import Cafe from '../views/cafePage.vue'
@@ -35,6 +36,11 @@ const routes = [
         path: '/map',
         name: 'map',
         component: Map
+    },
+    {
+        path: '/addStore',
+        name: 'addStore',
+        component: addStore
     },
     {
         path: "/login", component: () => import("../views/LoginView.vue"),
