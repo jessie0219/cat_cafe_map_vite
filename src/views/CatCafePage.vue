@@ -3,7 +3,15 @@
   <div class="container">
     <div class="row">
       <div class="mt-4 text-center">
-        <a v-if="!isShow" @click="toggle()">
+        <button
+          v-for="{ name, key } in filterList"
+          v-bind:key="`filter-${key}`"
+          v-on:click="filters[key] = !filters[key]"
+          :class="`SelectBtn ${filters[key] ? 'active' : ''} mx-2 px-2`"
+        >
+          {{ name }}
+        </button>
+        <!-- <a v-if="!isShow" @click="toggle()">
           <button class="SelectBtn mx-2 px-2"><strong>全部</strong></button></a
         >
         <a v-if="isShow" @click="toggle()">
@@ -36,7 +44,7 @@
           <button class="SelectBtn2 mx-2 px-2">
             <strong>寵物友善</strong>
           </button></a
-        >
+        > -->
       </div>
       <div class="d-flex justify-content-center">
         <div class="row">
@@ -205,6 +213,8 @@
 
 <script>
 import Navbar from "../components/CatNavbar.vue";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../utils/firestore";
 
 export default {
   components: {
@@ -212,29 +222,31 @@ export default {
   },
   data() {
     return {
-      isShow: false,
-      isShow2: false,
-      isShow3: false,
-      isShow4: false,
-      isShow5: false,
+      filters: { meal: false, adoption: false },
+      filterList: [
+        { name: "正餐", key: "meal" },
+        { name: "中途", key: "adoption" },
+      ],
+ 
     };
   },
+  async mounted() {
+    const querySnapshot = await getDocs(collection(db, "store_list"));
+
+    const result = {};
+    querySnapshot.forEach((doc) => {
+      const key = doc.id;
+      // const stores = doc.data()[ "name", "address", "weekday_text" ];
+      const address = doc.data()["address"];
+      const name = doc.data()["name"];
+      const weekday_text = doc.data()["weekday_text"];
+console.log(address,name,weekday_text)
+    });
+
+    // this.stores = result;
+  },
   methods: {
-    toggle() {
-      this.isShow = !this.isShow;
-    },
-    toggle2() {
-      this.isShow2 = !this.isShow2;
-    },
-    toggle3() {
-      this.isShow3 = !this.isShow3;
-    },
-    toggle4() {
-      this.isShow4 = !this.isShow4;
-    },
-    toggle5() {
-      this.isShow5 = !this.isShow5;
-    },
+
   },
 };
 </script>

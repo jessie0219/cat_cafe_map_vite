@@ -32,13 +32,13 @@
 </template>
 <script>
 import Navbar from '../../components/CatNavbar.vue'
-import Footer from '../../components/HomeFooter.vue'
+// import Footer from '../../components/HomeFooter.vue'
 
 
 export default{
     components:{ 
         Navbar,
-        Footer,
+        // Footer,
       
     },
     data() {

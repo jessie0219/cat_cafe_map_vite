@@ -187,8 +187,9 @@
             <strong>選擇捷運路線</strong>
           </button></a
         >
+       
       </div>
-      <div v-if="isShow" class="mt-4 d-flex justify-content-center">
+      <!-- <div v-if="isShow" class="mt-4 d-flex justify-content-center">
         <a type="submit" @click="tabChange(BrownLine)"
           ><button class="BR mx-1">BR</button></a
         ><a type="submit" @click="tabChange(RedLine)"
@@ -204,7 +205,7 @@
         ><a type="submit" @click="tabChange(YellowLine)">
           <button class="Y mx-1">Y</button></a
         >
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="text-center">
@@ -228,24 +229,24 @@ import "../homeStyle/timeLimit.css";
 // components
 import Navbar from "../components/CatNavbar.vue";
 import SelectLine from "../components/Map/SelectLine.vue";
-import BlueLine from "../components/Map/BlueLine.vue";
-import BrownLine from "../components/Map/BrownLine.vue";
-import RedLine from "../components/Map/RedLine.vue";
-import GreenLine from "../components/Map/GreenLine.vue";
-import OrangeLine from "../components/Map/OrangeLine.vue";
-import YellowLine from "../components/Map/YellowLine.vue";
+// import BlueLine from "../components/Map/BlueLine.vue";
+// import BrownLine from "../components/Map/BrownLine.vue";
+// import RedLine from "../components/Map/RedLine.vue";
+// import GreenLine from "../components/Map/GreenLine.vue";
+// import OrangeLine from "../components/Map/OrangeLine.vue";
+// import YellowLine from "../components/Map/YellowLine.vue";
 import homeTop from "../components/homeTop.vue";
 
 export default {
   components: {
     Navbar,
     SelectLine,
-    BlueLine,
-    BrownLine,
-    RedLine,
-    GreenLine,
-    OrangeLine,
-    YellowLine,
+    // BlueLine,
+    // BrownLine,
+    // RedLine,
+    // GreenLine,
+    // OrangeLine,
+    // YellowLine,
     Swiper,
     SwiperSlide,
     homeTop,
@@ -254,12 +255,12 @@ export default {
     return {
       isShow: false,
       SelectLine: SelectLine,
-      BlueLine: BlueLine,
-      BrownLine: BrownLine,
-      RedLine: RedLine,
-      GreenLine: GreenLine,
-      OrangeLine: OrangeLine,
-      YellowLine: YellowLine,
+      // BlueLine: BlueLine,
+      // BrownLine: BrownLine,
+      // RedLine: RedLine,
+      // GreenLine: GreenLine,
+      // OrangeLine: OrangeLine,
+      // YellowLine: YellowLine,
       changeView: SelectLine,
     };
   },

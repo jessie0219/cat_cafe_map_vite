@@ -1,4 +1,5 @@
 <template>
+<!-- navbar返回功能 -->
   <nav>
     <div class="navbar">
       <a href="javascript:history.back()" class="back"
