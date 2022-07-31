@@ -16,22 +16,20 @@
         <ul class="navbar-nav">
           <!-- 會員 -->
           <li class="nav-item">
-<<<<<<< HEAD
             <router-link class="nav-link" to="/login">
               <img src="../assets/icon/member.png" alt="" />
-=======
+            </router-link>
             <router-link class="nav-link" to="/map">
               <div class="d-flex justify-content-start align-items-center">
                 <img src="../assets/icon/member.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">會員</p>
               </div>
->>>>>>> acf92040b4f25338cd1b8ee7fec33ff6c2ed7d95
             </router-link>
           </li>
           <!-- 領養 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/adoption">
-              <img src="../assets/icon/adoption1.png" alt="">
+              <img src="../assets/icon/adoption1.png" alt="" />
             </router-link>
           </li>
           <!-- <li class="nav-item">
@@ -68,7 +66,7 @@
               </div>
             </router-link>
           </li>
-          
+
           <!-- 問題回報 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/discount">
