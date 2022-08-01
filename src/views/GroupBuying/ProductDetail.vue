@@ -15,15 +15,16 @@
             <div class="d-flex justify-content-center h-100">
             <div class="card my-4 border-0">
             <div class="px-0 d-flex justify-content-center">
-                <img :src="product.imageUrl" class="card-img-top product-img " alt="產品照片"
-                >
+                <img :src="product.imageUrl" class="card-img-top product-img " alt="產品照片">
                 <div class="d-flex">
                 </div>
             </div>   
                     <div class="card-body product-content text-center fs-5">
+                        <span class="card-title fw-bold">{{product.brand}}</span>
                         <span class="card-title fw-bold">{{product.title}}</span>
                         <br>
                         <span class="card-text">{{product.description}}</span>
+                        <span class="card-text">{{product.forWho}}</span>
                         <br>
                         <span class="product-price me-4">NT${{product.price}}</span>
                         

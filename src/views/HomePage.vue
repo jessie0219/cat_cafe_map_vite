@@ -38,16 +38,13 @@
   <router-link to="/discount">
   <swiper :pagination="true" :modules="modules" class="mySwiper swiper1">
     <swiper-slide class="swiper-slide1"
-      ><img src="../assets/icon/discount.png" alt="discount"
+      ><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhRQGzeNbYO5EAkafgDn7QRbaWNe-tJskOMm7EEYYghapS40rNxmM5wVNEvkQMnncZSVfpgwxGtZZWdTFqgubLcZawRDH1YcD3jDnYrsSrilAs0cC6kG1paXUqhSzl8aqS_uNbR0VXkakm7_WXk5t95wtXr02nBM9UvCOfzx3HGOyFC2rmJ9mK-JCd6Dw" alt="discount"
     /></swiper-slide>
     <swiper-slide class="swiper-slide1"
-      ><img src="../assets/icon/discount.png" alt="discount"
+      ><img src="https://blogger.googleusercontent.com/img/a/AVvXsEj8l4sOQe1BdFHukDJq3xIZq3Nfad8X1z5Aotdj9hNJLKvHm5QeLYst5FNSqcPyBK-NwjeLfZS8ZnMfOBEMo_63XjQkL99KcvVWkkLNs0WBQC1rs5clM8NwajfFeXHVtKm3_fV_pabt-xHtmRxDbNfpSqaFa9Ug79LBxk8lrzZ7DFkDHGiud9nkVrJ_WA" alt="discount"
     /></swiper-slide>
     <swiper-slide class="swiper-slide1"
-      ><img src="../assets/icon/discount.png" alt="discount"
-    /></swiper-slide>
-    <swiper-slide class="swiper-slide1"
-      ><img src="../assets/icon/discount.png" alt="discount"
+      ><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgmviWGJIajKmQW1PWP0CtB0yNzevMCeEJdv8jXXQrNpBSs22sGw0o4UOCDH2WxcoXzSTgRJtXFIc5eh_dzuQpqL8HOtTJMBvRkI5uNzg7isaxiFlUHEKXgeyOH6Sv-XjbfFhAh3BneHv8j1VS1hxs47c6PcCde2_5zfIfRmh7gAkn2eFbPLcSTFr6taQ" alt="discount"
     /></swiper-slide>
   </swiper>
   </router-link>
@@ -105,98 +102,32 @@
     :modules="modules"
     class="mySwiper swiper3"
   >
-    <swiper-slide class="swiper-slide3">
-      <div class="timeLimit">
-        <div class="card">
+    <swiper-slide class="swiper-slide3" v-for="product in products" :key="product.id">
+      <div class="timeLimit d-flex">
+        <div class="card " >
           <div class="card-title">
-            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
+            <img :src="product.imageUrl" class="card-img-top product-img " alt="產品照片">
           </div>
           <span class="line"></span>
-          <div class="card-txt">
-            <div class="lh-1 text-center">
-              <span class="title">【Monge】</span>
+          <router-link :to="{ name: 'product', params: { id: product.id }}" class="product-link text-dark">
+            <div class="card-txt">
+              <div class="lh-1 text-center">
+                <span class="title">{{product.brand}}</span>
+              </div>
+              <div class="lh-sm">
+                <span class="product text-nowrap">{{product.description}}</span><br />
+                <span class="product-price">NT${{product.price}}</span><br />
+                <span class="product-sale">NT${{product.sale}}</span><br />
+              </div>
+              <div class="lh-1 text-center">
+                <span class="title">{{product.time}}</span>
+              </div>
             </div>
-            <div class="lh-sm">
-              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
-              <span class="price">$1000</span><br />
-              <span class="price">$800</span><br />
-            </div>
-            <div class="lh-1 text-center">
-              <span class="title">6天 3:24</span>
-            </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </swiper-slide>
-    <swiper-slide class="swiper-slide3">
-      <div class="timeLimit">
-        <div class="card">
-          <div class="card-title">
-            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
-          </div>
-          <span class="line"></span>
-          <div class="card-txt">
-            <div class="lh-1 text-center">
-              <span class="title">【Monge】</span>
-            </div>
-            <div class="lh-sm">
-              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
-              <span class="price">$1000</span><br />
-              <span class="price">$800</span><br />
-            </div>
-            <div class="lh-1 text-center">
-              <span class="title">6天 3:24</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="swiper-slide3">
-      <div class="timeLimit">
-        <div class="card">
-          <div class="card-title">
-            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
-          </div>
-          <span class="line"></span>
-          <div class="card-txt">
-            <div class="lh-1 text-center">
-              <span class="title">【Monge】</span>
-            </div>
-            <div class="lh-sm">
-              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
-              <span class="price">$1000</span><br />
-              <span class="price">$800</span><br />
-            </div>
-            <div class="lh-1 text-center">
-              <span class="title">6天 3:24</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="swiper-slide3">
-      <div class="timeLimit">
-        <div class="card">
-          <div class="card-title">
-            <img src="../assets/icon/adoptThem.png" alt="限時特價商品" />
-          </div>
-          <span class="line"></span>
-          <div class="card-txt">
-            <div class="lh-1 text-center">
-              <span class="title">【Monge】</span>
-            </div>
-            <div class="lh-sm">
-              <span class="product text-nowrap">天然五穀貓糧(1.5kg)</span><br />
-              <span class="price">$1000</span><br />
-              <span class="price">$800</span><br />
-            </div>
-            <div class="lh-1 text-center">
-              <span class="title">6天 3:24</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
+    
   </swiper>
   
   <div class="container">
@@ -239,6 +170,11 @@ export default {
       modules: [FreeMode, Pagination],
     };
   },
+  computed: {
+  products: function(){
+     return this.$store.state.products
+  },
+}
 };
 </script>
 
@@ -311,5 +247,15 @@ export default {
 .more a {
   color: black;
   text-decoration: none;
+}
+.product-link{
+    text-decoration: none !important;
+}
+.product-price{
+    text-decoration:line-through;
+    color:#b4b2b1
+}
+.product-sale{
+    color: #ff0000 
 }
 </style>

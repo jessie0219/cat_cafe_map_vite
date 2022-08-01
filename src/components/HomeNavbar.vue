@@ -74,18 +74,20 @@
                 <img src="../assets/icon/groupPurchase1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">限時折扣</p>
               </div>
+              <img src="../assets/icon/groupPurchase1.png" alt="" />
             </router-link>
           </li>
           <br />
           <li class="nav-item">
             <router-link class="nav-link" to="/map">
               <div class="d-flex justify-content-start align-items-center">
-                <img src="../assets/icon/problemReport1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">問題回報</p>
               </div>
             </router-link>
+            <router-link class="nav-link" to="#">
+              <img src="../assets/icon/problemReport1.png" alt="" />
+            </router-link>
           </li>
-          <!-- 贊助 -->
           <li class="nav-item">
             <router-link class="nav-link" to="/map">
               <div class="d-flex justify-content-start align-items-center">
