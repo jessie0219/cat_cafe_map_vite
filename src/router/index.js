@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomePage.vue";
+import addStore from '../views/addStore.vue'
 import Map from "../views/MapPage.vue"; //搜尋畫面
 import CatCafe from "../views/CatCafePage.vue"; //捷運搜尋的貓咖啡廳select畫面
 import Cafe from "../views/cafePage.vue"; //單獨咖啡廳畫面
@@ -73,6 +74,11 @@ const routes = [
     path: "/",
     name: "home",
     component: Home,
+  },
+  {
+      path: '/addStore',
+      name: 'addStore',
+      component: addStore
   },
   {
     path: "/map",
