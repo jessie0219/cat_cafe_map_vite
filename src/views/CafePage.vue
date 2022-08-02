@@ -27,9 +27,9 @@
       <span class="mx-2"
         ><i style="color: #f69246" class="fa-solid fa-phone"></i
         >0800-092-000</span
-      ><span class="mx-2">不須事先預約</span>
+      ><span class="mx-2"><i class="fa-solid fa-star"></i>5</span>
     </div>
-    <div class="d-flex justify-content-center mt-5">
+    <!-- <div class="d-flex justify-content-center mt-5">
       <div>
         <div class="drop-shadow d-flex circle mx-4 justify-content-center">
           <div class="align-self-center">餐廳</div>
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div
       class="container flex-column mt-4 text-center d-flex justify-content-center"
     >
