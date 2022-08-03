@@ -6,6 +6,11 @@
         ><i class="text-light mx-3 fa-solid fa-angle-left"></i
       ></a>
     </div>
+      <router-link class="nav-link" to="/login">
+        <div class="signin justify-content-end">
+          <img src="../assets/icon/signin.png" alt="登入">
+        </div>
+      </router-link>
     <!-- <ul class="menu">
       <li><a href="##">Home</a></li>
     </ul> -->
@@ -17,6 +22,11 @@ export default {};
 </script>
 
 <style scoped>
+.signin{
+  position:absolute;
+  right:13px;
+  top:10px;
+}
 body,
 h1,
 ul,
