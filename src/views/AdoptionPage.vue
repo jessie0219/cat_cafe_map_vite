@@ -15,7 +15,7 @@
           <img src="../assets/20190425-4.jpg" class=" " alt="...">
           <br>
           <p class="text-center">我在 - 新北市五股區公立動物之家</p>
-          <img src="../assets/新北市五股區公立動物之家.jpg" class="" alt="新北市五股區公立動物之家" style="height:20%">
+          <div class="cat"> </div>
           <br>
           <div class="text-center">
             <strong>
@@ -153,9 +153,20 @@ img{
   margin:auto;
   height: 100%;
   width: 95%;
+  border-radius: 20px;
 }
 hr{
   border:2px;
   color:rgb(255, 111, 0);
+}
+.cat{
+  overflow:hidden;
+  height: 120px;
+  background-size: 60%; 
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 20px;
+  background-size: cover; 
+ background-image: url(../assets/新北市五股區公立動物之家.jpg);
 }
 </style>

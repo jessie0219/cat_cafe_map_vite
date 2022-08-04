@@ -88,7 +88,7 @@ html, body {
   opacity: 90%;
 }
 .floating-container:hover {
-  height: 140px;
+  height: 130px;
 }
 .floating-container:hover .floating-button {
   -webkit-transform: translatey(5px);

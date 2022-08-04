@@ -110,7 +110,7 @@ button.allaboutBtn:hover {
   background-color: #ffb33a;
 }
 .allaboutcatcard{
-   overflow:hidden;
+  overflow:hidden;
   width: 18rem;
   height: 24rem;
   background-size: 100%;

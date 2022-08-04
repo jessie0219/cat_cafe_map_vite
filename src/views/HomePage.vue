@@ -11,26 +11,33 @@
 
   <div class="container-fluid d-flex justify-content-center">
     <div class="icon d-flex">
+      <!-- 領養 -->
       <div class="adoption">
-        <router-link class="nav-link" to="/adoption"></router-link>
+        <router-link class="nav-link" to="/AdoptionPage"></router-link>
       </div>
-
+      <!-- 商品 -->
       <div class="groupPurchase">
         <router-link class="nav-link" to="/groupbuying"></router-link>
       </div>
+      <!-- 我的最愛 -->
       <div class="favorite">
         <router-link class="nav-link" to="/favorite"></router-link>
       </div>
+      <!-- 貓的二三事 -->
       <div class="catInfo">
         <router-link class="nav-link" to="/allaboutcatnav"></router-link>
       </div>
     </div>
   </div>
+  <!-- 使用者新增店家 -->
   <div class="container-fluid d-flex justify-content-center">
     <div class="icon d-flex">
-      <div class="addCafe mt-5 mb-5"></div>
+      <div class="addCafe mt-5 mb-5">
+        <router-link class="nav-link" to="/addStore"></router-link>
+      </div>
     </div>
   </div>
+  <!-- 優惠活動輪播器 -->
   <div class="container">
     <p class="subtitle">獨家 貓咖好康</p>
   </div>
@@ -48,6 +55,7 @@
     /></swiper-slide>
   </swiper>
   </router-link>
+  <!-- 政府領養平台 -->
   <div class="container">
     <p class="subtitle mt-5">領養他們</p>
   </div>
@@ -62,6 +70,7 @@
     :modules="modules"
     class="mySwiper swiper2"
   >
+  <!-- img需要串api -->
     <swiper-slide class="swiper-slide2"
       ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
     /></swiper-slide>
@@ -87,6 +96,7 @@
       ><img src="../assets/icon/adoptThem.png" alt="adoptThem"
     /></swiper-slide>
   </swiper>
+  <!-- 團購輪播器 -->
   <div class="container">
     <p class="subtitle mt-5">獨家 限時特價</p>
   </div>
@@ -201,13 +211,15 @@ export default {
   height: 36px;
 }
 /* 領養 團購 我的最愛 貓資訊icon */
+
+/* 領養 */
 .adoption {
-  background-image: url("../assets/icon/adoption.png");
+  background-image: url("../assets/icon/adoption-1.png");
   width: 53px;
   height: 65px;
 }
 .adoption:hover {
-  background-image: url("../assets/icon/adoptionHover.png");
+  background-image: url("../assets/icon/adoptionHover-1.png");
 }
 .groupPurchase {
   background-image: url("../assets/icon/groupPurchase.png");
@@ -227,14 +239,15 @@ export default {
 .favorite:hover {
   background-image: url("../assets/icon/favoriteHover.png");
 }
+/* catInfo貓的二三事 */
 .catInfo {
-  background-image: url("../assets/icon/catInfo.png");
+  background-image: url("../assets/icon/catInfo-1.png");
   width: 53px;
   height: 65px;
   margin-left: 25px;
 }
 .catInfo:hover {
-  background-image: url("../assets/icon/catInfoHover.png");
+  background-image: url("../assets/icon/catInfoHover-1.png");
 }
 .addCafe {
   background-image: url("../assets/icon/addCafe.png");

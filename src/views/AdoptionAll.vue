@@ -14,8 +14,9 @@
              新北市
         </div>
           <br>
-          <img src="../assets/新北市五股區公立動物之家.jpg" class="" alt="新北市五股區公立動物之家" style="height:20%">
+          <div class="cat"></div>
           <br>
+          <!-- <div class="cat" src="../assets/新北市五股區公立動物之家.jpg" class="" alt="新北市五股區公立動物之家" style="height:20%"> -->
           <div class="card-footer text-muted">
               <ul>
                 <li>品種：混種貓</li>
@@ -25,7 +26,6 @@
           </div>
         </div>
       </div>
-
       <!-- <div class="col">
         <div class="card border-warning" style="width: 20rem">
           <div class="card-body">
@@ -49,6 +49,8 @@
 
 <script>
 import Navbar from "../components/CatNavbar.vue";
+import axios from "axios";
+
 
 export default {
   components: {
@@ -102,11 +104,15 @@ a:hover {
 li{
   color: rgb(0, 0, 0);
 }
-img{
+/* img{
   display:block;
   margin:  auto;
   height: 50px;
   width: 95%;
+} */
+
+.cat{
+ background-image: url(../assets/新北市五股區公立動物之家.jpg);
 }
 .btn-primary {
     color: #fff;

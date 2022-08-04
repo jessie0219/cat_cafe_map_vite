@@ -23,7 +23,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/allaboutcatnav">
+            <router-link class="nav-link" to="/AdoptionPage">
               <div class="d-flex justify-content-start align-items-center">
                 <img src="../assets/icon/adoption1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">領養</p>
@@ -31,7 +31,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/allaboutcatnav">
               <div class="d-flex justify-content-start align-items-center">
                 <img src="../assets/icon/catInfo1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">貓的兩三事</p>
@@ -39,7 +39,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/">
               <div class="d-flex justify-content-start align-items-center">
                 <img src="../assets/icon/myFavorite1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">我的最愛</p>
@@ -62,9 +62,10 @@
               </div>
             </router-link>
           </li>
-          <br />
+          
+       
           <li class="nav-item">
-            <router-link class="nav-link" to="/map">
+            <router-link class="nav-link" to="/">
               <div class="d-flex justify-content-start align-items-center">
                 <img src="../assets/icon/problemReport1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">問題回報</p>

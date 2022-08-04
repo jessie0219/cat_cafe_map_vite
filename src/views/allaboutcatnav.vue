@@ -59,7 +59,7 @@ export default {
 
 <style>
 button.allaboutBtn {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
   margin: 5px;
   height: 30px;
   border: 1px solid #ffb881;
