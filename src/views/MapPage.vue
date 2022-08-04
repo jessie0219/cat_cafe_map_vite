@@ -96,71 +96,17 @@
           </div>
         </div>
       </div>
-      <div class="mt-4 mb-1">附近的貓咖</div>
-      <!-- 領養他們輪播adoptThem -->
-      <!-- <swiper
-        :slidesPerView="3"
-        :spaceBetween="10"
-        :freeMode="true"
-        :pagination="{
-          clickable: true,
-        }"
-        :modules="modules"
-        class="mySwiper swiper2"
-      >
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-        <swiper-slide class="swiper-slide2"
-          ><img
-            class="image"
-            src="../assets/icon/adoptThem.png"
-            alt="adoptThem"
-        /></swiper-slide>
-      </swiper> -->
+      <div class="mt-4 mb-1"><strong>附近的貓咖</strong></div>
       <div class="d-flex justify-content-center">
-        <div class="catCafe mx-1"></div>
-        <div class="catCafe mx-1"></div>
-        <div class="catCafe mx-1"></div>
+        <div class="catCafe mx-1">
+          <img src="../assets/icon/adoptThem.png" alt="" />
+        </div>
+        <div class="catCafe mx-1">
+          <img src="../assets/icon/adoptThem.png" alt="" />
+        </div>
+        <div class="catCafe mx-1">
+          <img src="../assets/icon/adoptThem.png" alt="" />
+        </div>
         <!-- <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div> -->
       </div>
@@ -187,7 +133,6 @@
             <strong>選擇捷運路線</strong>
           </button></a
         >
-       
       </div>
       <!-- <div v-if="isShow" class="mt-4 d-flex justify-content-center">
         <a type="submit" @click="tabChange(BrownLine)"
@@ -336,12 +281,18 @@ button.distanceBtn:hover {
   background-color: #ffb33a;
   color: #fff;
 }
-.catCafe {
+/* .catCafe {
   width: 100px;
   height: 100px;
+  margin: 0;
+  padding: 0;
   border-radius: 20px;
   border: 1px solid #ffb881;
   background-color: rgba(255, 255, 255, 0);
+} */
+img.catCafe {
+  width: 100%;
+  height: 100%;
 }
 button.lineBtn {
   width: 150px;
@@ -592,10 +543,7 @@ button.distance:focus {
   color: #fff;
   background-color: #ffb33a;
 }
-.image {
-  width: 150px;
-  height: 150px;
-}
+
 .mySwiper {
   z-index: -1;
 }
