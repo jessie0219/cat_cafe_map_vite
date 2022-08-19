@@ -1,5 +1,6 @@
 <template>
   <Navbar></Navbar>
+  <!-- 捷運>捷運站>顯示店家 -->
   <div class="container">
     <div class="row">
       <div class="mt-4 text-center">
@@ -56,7 +57,7 @@
                 <div class="catCafe card" style="width: 18rem">
                   <div class="text-center">
                     <img
-                      src="https://fakeimg.pl/250x250/"
+                      src="../assets/Frame 1.png"
                       class="card-img-top"
                       alt="catCafe"
                     />
@@ -66,26 +67,32 @@
                       <div>
                         FUFUCat Cafe
                         <i class="fa-solid fa-star" style="color: #fba524"></i>
-                        4.5(989)
+                        4.7(989)
                         <i
                           class="fa-regular fa-heart"
                           style="color: #ff0202"
                         ></i>
                       </div>
                       <div>
-                        <button class="SelectedBtn mx-1">
+                        <!-- <button class="SelectedBtn mx-1">
                           <strong>中途</strong>
                         </button>
                         <button class="SelectedBtn mx-1">
                           <strong>寵物友善</strong>
-                        </button>
+                        </button> -->
+                          <button class="SelectedBtn mx-1">
+                        <strong>正餐</strong>
+                      </button>
+                        <button class="SelectedBtn mx-1">
+                        <strong>點心</strong>
+                      </button>
                       </div>
                       <div>
                         <i
                           class="fa-solid fa-location-dot mx-1"
                           style="color: #0fb800"
                         ></i>
-                        <span>距離90公尺</span> <span>徒步12~15分鐘</span>
+                        <span>距離260公尺</span> <span>徒步3~5分鐘</span>
                       </div>
                     </div>
                   </div>
@@ -98,7 +105,7 @@
               <div class="catCafe card" style="width: 18rem">
                 <div class="text-center">
                   <img
-                    src="https://fakeimg.pl/250x250/"
+                    src="../assets/entry time.jpg"
                     class="card-img-top"
                     alt="catCafe"
                   />
@@ -106,17 +113,23 @@
                 <div class="list-group list-group-flush">
                   <div class="container">
                     <div>
-                      FUFUCat Cafe
+                      早初entry time
                       <i class="fa-solid fa-star" style="color: #fba524"></i>
-                      4.5(989)
+                      4.8(989)
                       <i class="fa-regular fa-heart" style="color: #ff0202"></i>
                     </div>
                     <div>
-                      <button class="SelectedBtn mx-1">
+                      <!-- <button class="SelectedBtn mx-1">
                         <strong>中途</strong>
-                      </button>
+                      </button> -->
                       <button class="SelectedBtn mx-1">
                         <strong>寵物友善</strong>
+                      </button>
+                       <button class="SelectedBtn mx-1">
+                        <strong>正餐</strong>
+                      </button>
+                        <button class="SelectedBtn mx-1">
+                        <strong>點心</strong>
                       </button>
                     </div>
                     <div>
@@ -124,13 +137,13 @@
                         class="fa-solid fa-location-dot mx-1"
                         style="color: #0fb800"
                       ></i>
-                      <span>距離90公尺</span> <span>徒步12~15分鐘</span>
+                      <span>距離600公尺</span> <span>徒步8~9分鐘</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mt-3">
+            <!-- <div class="mt-3">
               <div class="catCafe card" style="width: 18rem">
                 <div class="text-center">
                   <img
@@ -201,7 +214,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- 上面先寫死，接api後可以刪除留template -->
           </div>
         </div>
@@ -281,10 +294,10 @@ button.SelectBtn2 {
 }
 .catCafe {
   border: #ffb33a solid 2px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .catCafe img {
-  width: 80%;
+  width: 100%;
   height: 250px;
   /* border-radius: 20px; */
 }

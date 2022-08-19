@@ -56,31 +56,36 @@
                   </div>
                   <div class="col-4">
                     <button class="distance">
-                      <strong>&lt;1KM</strong>
+                      <strong>&lt;500M</strong>
                     </button>
                   </div>
                   <div class="col-4 mx-2">
                     <button class="distance">
-                      <strong>&lt;3KM</strong>
+                      <strong>&lt;1KM</strong>
                     </button>
                   </div>
                 </div>
                 <div class="container d-flex justify-content-between mt-4">
-                  <div class="col-4">
-                    <button class="distance">
-                      <strong>&lt;5KM</strong>
-                    </button>
+                   <div class="col-4">
+                    <!-- <button class="distance">
+                      <strong>&lt;</strong>
+                    </button> -->
                   </div>
                   <div class="col-4">
                     <button class="distance">
-                      <strong>&lt;10KM</strong>
+                      <strong>&lt;1.5KM</strong>
                     </button>
                   </div>
-                  <div class="col-4 mx-2">
+                  <div class="col-4">
                     <button class="distance">
-                      <strong>&lt;20KM</strong>
+                      <strong>&lt;2KM</strong>
                     </button>
                   </div>
+                  <!-- <div class="col-4 mx-2">
+                    <button class="distance">
+                      <strong>&lt;2.5KM</strong>
+                    </button>
+                  </div> -->
                 </div>
 
                 <br />
@@ -99,14 +104,17 @@
       <div class="mt-4 mb-1"><strong>附近的貓咖</strong></div>
       <div class="d-flex justify-content-center">
         <div class="catCafe mx-1">
-          <img src="../assets/icon/adoptThem.png" alt="" />
+          <img src="../assets/icon/store-1.png" alt="" />
         </div>
         <div class="catCafe mx-1">
-          <img src="../assets/icon/adoptThem.png" alt="" />
+          <img src="../assets/icon/store-2.png" alt="" />
         </div>
         <div class="catCafe mx-1">
-          <img src="../assets/icon/adoptThem.png" alt="" />
+          <img src="../assets/icon/store-3.png" alt="" />
         </div>
+        <!-- <div class="catCafe mx-1">
+          <img src="../assets/icon/store-4.png" alt="" />
+        </div> -->
         <!-- <div class="catCafe mx-1"></div>
         <div class="catCafe mx-1"></div> -->
       </div>

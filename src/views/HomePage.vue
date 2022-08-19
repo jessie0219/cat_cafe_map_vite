@@ -4,7 +4,7 @@
     <router-link to="/map">
       <span class="home-scroll-text d-flex">
         <img src="../assets/icon/search.png" alt="search" />
-        <p>&nbsp;以地址或捷運<br />&nbsp;找到離你最近的貓貓</p>
+        <h5>&nbsp;以地址或捷運<br />&nbsp;找到離你最近的貓咖</h5>
       </span>
     </router-link>
   </div>
@@ -190,7 +190,7 @@ export default {
 
 <style scoped>
 .home-scroll {
-  background-image: url(../assets/icon/rectangle.png);
+  background-image: url(../assets/icon/map.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

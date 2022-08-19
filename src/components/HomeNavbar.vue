@@ -25,7 +25,7 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/AdoptionPage">
               <div class="d-flex justify-content-start align-items-center">
-                <img src="../assets/icon/adoption1.png" alt="" />
+                <img src="../assets/icon/adoption-1-1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">領養</p>
               </div>
             </router-link>
@@ -33,7 +33,7 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/allaboutcatnav">
               <div class="d-flex justify-content-start align-items-center">
-                <img src="../assets/icon/catInfo1.png" alt="" />
+                <img src="../assets/icon/catInfo-1-1.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">貓的兩三事</p>
               </div>
             </router-link>
@@ -50,14 +50,14 @@
             <router-link class="nav-link" to="/groupbuying">
               <div class="d-flex justify-content-start align-items-center">
                 <img src="../assets/icon/groupPurchase1.png" alt="" />
-                <p class="h2 fw-bold mx-2 mt-2">限時團購</p>
+                <p class="h2 fw-bold mx-2 mt-2">團購商品</p>
               </div>
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/discount">
               <div class="d-flex justify-content-start align-items-center">
-                <img src="../assets/icon/groupPurchase1.png" alt="" />
+                <img src="../assets/icon/sale.png" alt="" />
                 <p class="h2 fw-bold mx-2 mt-2">限時折扣</p>
               </div>
             </router-link>

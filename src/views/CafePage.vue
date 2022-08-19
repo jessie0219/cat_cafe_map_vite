@@ -9,7 +9,7 @@
         <button class="SelectBtn mx-2 px-2"><strong>中途</strong></button>
       </div>
       <div class="mt-4 container text-center">
-        <img src="https://fakeimg.pl/300x300/" />
+        <img src="../assets/Frame 1.png" />
       </div>
     </div>
     <div class="mt-4 container text-center">
@@ -110,7 +110,7 @@
             <div></div>
           </div> -->
           <div class="container text-center">
-            <img src="https://fakeimg.pl/200x200/" />
+            <img src="../assets/277989169_1704713136540353_493104519418291666_n.jpg" />
           </div>
           <hr style="margin-top: -0.1rem; color: #f59246" />
           <div style="margin-left: 40px" class="container">
@@ -133,7 +133,7 @@
             <div></div>
           </div> -->
           <div class="container text-center">
-            <img src="https://fakeimg.pl/200x200/" />
+            <img src="../assets/茶茶.jpg" />
           </div>
           <hr style="margin-top: -0.1rem; color: #f59246" />
           <div style="margin-left: 40px" class="container">
@@ -201,5 +201,9 @@ button.SelectBtn {
 .content {
   width: 100%;
   border: #f59246 solid 2px;
+}
+img{
+  width: 50%;
+  height: 200px;
 }
 </style>
